@@ -1,0 +1,192 @@
+---
+title: "Introduction to the New Statistics - R Workbook"
+author: "David Erceg-Hurn, Ryne Sherman, Geoff Cumming, Robert Calin-Jagerman"
+date: "4 February 2016"
+output: 
+  pdf_document: 
+    latex_engine: lualatex
+    number_sections: yes
+    toc: yes
+---
+\newpage
+# Overview
+An overview of the workbook to go here.
+
+Info on how to install R functions etc.
+
+
+
+\newpage
+# R Basics
+Some basic info for R beginners to go here.
+
+eg how to install R, and sources of help.
+
+This section can be skipped by anyone who already knows how to use R.
+
+
+## Useful Websites for Learning R
+
+A list of useful websites, online tutorials etc for learning R to go here.
+
+[R-Studio Resources for Learning R](https://www.rstudio.com/resources/training/online-learning/#R)
+(with links to interactive tutorials for beginners)
+
+[R Bloggers - How to Learn R](http://www.r-bloggers.com/how-to-learn-r-2)
+
+[Quick-R](http://www.statmethods.net)
+
+[Cookbook for R](http://www.cookbook-r.com/)
+
+[R Quick Reference Card](http://cran.r-project.org/doc/contrib/Short-refcard.pdf)
+
+\newpage
+# Picturing and Describing Data
+
+Materials relevant to ITNS Ch 3 here.
+
+## Descriptive Statistics
+
+
+## Frequency Histogram
+### Single Sample
+
+### Multiple Samples
+
+
+## Stacked Dot Plot
+
+## End of Chapter Exercises
+
+
+\newpage
+# The Normal Distribution and Sampling
+
+ITNS Ch 4 material.
+
+## Finding Tail Areas
+
+## Finding X or z
+
+## End of Chapter Exercises
+
+
+
+\newpage
+# Confidence Intervals and Effect Sizes
+Ch 5 material.
+
+## Finding Tail areas for t-values
+Given any df.
+
+
+## Find critical t values
+Given df and tail probability.
+
+
+## Cat's Eye Picture
+
+
+## End of Chapter Exercises
+
+\newpage
+# P-values, NHST and Confidence Intervals
+Ch 6 material.
+
+## Calculate p-values using Z
+
+
+## Calculate p-values given t
+ie one-sample t-test
+Presumably
+
+## End of Chapter Exercises
+
+\newpage
+# Independent Groups Design
+Ch 7 material.
+
+Use a function to compute:
+
+* Descriptive stats
+
+* Mean difference and CI
+
+* P value (with and without assuming equal variances)
+
+* Cohen's d, d-unbiased, noncentral T CI
+
+* Plot with the difference axis
+
+## End of Chapter Exercises
+
+
+\newpage
+# Paired Design
+
+Ch 8 material.
+
+Present a function that will compute mean difference, CI, p value, d and CI.
+
+Show how to plot the difference and it's CI.
+
+
+## End of Chapter Exercises
+
+\newpage
+# Meta Analysis
+
+?????
+
+Chapter 9 material - if needed.
+
+Maybe point readers to existing MA packages in R.
+
+## End of Chapter Exercises
+
+\newpage
+# Open Science & Planning Research
+
+????
+
+Maybe some functions for power and precision planning here?
+
+## End of Chapter Exercises
+
+\newpage
+# Correlation
+Ch 11 material
+
+## End of Chapter Exercises
+
+
+\newpage
+# Regression
+Ch 12 material
+
+## End of Chapter Exercises
+
+\newpage
+# Frequencies, Proportions, and Risk
+Ch 13 material
+
+## End of Chapter Exercises
+
+\newpage
+# Extended Designs
+Cover One way and Factorial Designs here (Ch 13 and 14).
+
+I imagine the same function will be used for both.
+
+## End of Chapter Exercises - Ch 14
+
+## End of Chapter Exercises - Ch 15
+
+
+\newpage
+# Future Directions
+Ch 16 material.
+
+Robust independent groups analysis here?
+
+## End of Chapter Exercises
