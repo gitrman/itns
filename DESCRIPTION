@@ -1,23 +1,24 @@
 Package: escir
 Title: Effect Size and Confidence Intervals in R
 Version: 0.0.0.9000
-Date: 2016-03-21
+Date: 2016-03-28
 Authors@R: person("David", "Erceg-Hurn", email = "escir@mailbag.xyz", role=c("aut", "cre"))
-Maintainer: David Erceg-Hurn <escir@mailbag.xyz>
+Maintainer: David Erceg-Hurn <gitrman@mailbag.xyz>
+URL: http://www.thenewstatistics.com
 Description: escir makes it easier to compute and plot effect sizes and
     confidence intervals in R. The effect size indicies include means and mean
     differences, standardised mean differences (aka 'Cohen's d'), trimmed means,
     correlation and regression coefficients, frequencies, proportions, and risk
     ratios. escir was written to accompany the book Introduction to The New
     Statistics & Open Science (2016) by Geoff Cumming and Robert Calin-Jagerman.
-License: GPL-3
-LazyData: TRUE
+Depends:
+    R (>= 3.1.0)
 Imports:
-    ggplot2,
     MBESS
-URL: http://www.thenewstatistics.com
-RoxygenNote: 5.0.1
 Suggests: knitr,
     rmarkdown,
     testthat
+License: GPL-3
+LazyData: TRUE
 VignetteBuilder: knitr
+RoxygenNote: 5.0.1

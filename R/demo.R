@@ -13,26 +13,15 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-devtools::use_package("MBESS")
-
-hello <- function() {
-  print("Hello, world!")
-}
-
-hello2 <- function() {
-  print("Hello, world!")
-}
-
 #'Demo function title here
 #'
-#'\code{demo_fun} The second paragraph is the description. is used to sum two
-#'numbers and I want to make it well longer than 80 characters ok.
+#'\code{demo_fun} The second paragraph is the description.
 #'
 #'@param x A numeric vector.
 #'@param y A second numeric vector.
 #'@return Return demo value here
 #'@section MyTestCustomSection:
-#'  here is my test custom section does it work
+#'  Demo testing.
 #'@examples
 #'demo_fun(1, 10)
 #'demo_fun(1000, 3)
@@ -40,9 +29,8 @@ hello2 <- function() {
 #'\dontrun{
 #'demo_fun("a", 3)
 #'}
-#'@seealso \code{\link{hello}} for more info
 #' @export
 demo_fun <- function(x, y) {
+  MBESS::smd(rnorm(10), rnorm(10))
   x + y
 }
-
