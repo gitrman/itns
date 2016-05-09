@@ -1,0 +1,38 @@
+#'Two Independent Groups - Math Gender IAT
+#'
+#'An example of data from a study with a two independent groups design used in Chapter 7 of the book
+#'\emph{Introduction to the New Statistics}.
+#'
+#'To what extent is gender related to implicit attitudes about bias?
+#'To find out, Nosek and colleagues asked male and female students to complete an Implicit Association Test (IAT) that
+#'measured how easily negative ideas could be connected to art or to mathematics.  The data shown here records the participants'
+#'gender and their IAT score.  Positive scores indicate an easier time linking negative ideas with mathematics,
+#'negative scores indicate an easier time linking positive ideas with mathematics.
+
+#' The data is from 2 different labs (Ithaca and SDSU), both part of a large-scale collaboration in which the same
+#' studies were run in multiple labs all over the world.
+#'
+#'@format A data frame with 243 rows and 4 variables:
+#'\describe{
+#'  \item{sessionid}{Respondent identifier}
+#'  \item{location}{the lab that collected the data (ithaca or sdsu)}
+#'  \item{gender}{Gender: male or female}
+#'  \item{iat_score}{The score on the IAT test, where higher scores represent stronger negative bias towards math and negative scores represent stronger negative bias towards art.}
+#'}
+#'
+#'@source
+#'This is data is available online at \url{https://osf.io/wx7ck} and is from:
+#'
+#'Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahnik, S., Bernstein, M. J., ... & Nosek, B. A. (2014).
+#'Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152. \url{http://doi.org/10.1027/1864-9335/a000178}
+#'
+#'Data from participants that had to be excluded due to high error rates or slow responses has already been deleted.
+#'
+#'The original study to investigate this effect is:
+#'Nosek, B. a, Banaji, M. R., & Greenwald, A. G. (2002). Math = male, me = female, therefore math not = me.
+#'\emph{Journal of Personality and Social Psychology, 83}, 44-59. \url{http://doi.org/10.1037/0022-3514.83.1.44}
+#'
+#'@references
+#'Cumming, G., & Calin-Jageman, R. (2017).
+#'  \emph{Introduction to the New Statistics}. New York; Routledge.
+"math_gender_iat"
