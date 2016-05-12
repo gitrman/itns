@@ -17,7 +17,15 @@ Installation
 
 ``` r
 # install.packages("devtools")
-# devtools::install_github("gitrman/itns")
+ devtools::install_github("gitrman/itns")
+#> Downloading GitHub repo gitrman/itns@master
+#> from URL https://api.github.com/repos/gitrman/itns/zipball/master
+#> Installing itns
+#> "C:/PROGRA~1/R/R-33~1.0/bin/x64/R" --no-site-file --no-environ --no-save  \
+#>   --no-restore --quiet CMD INSTALL  \
+#>   "C:/Users/Lappy-D/AppData/Local/Temp/RtmpAb1fQw/devtools3c643e9c5880/gitrman-itns-ff6da52"  \
+#>   --library="D:/win-library" --install-tests
+#> 
 ```
 
 References
