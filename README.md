@@ -18,7 +18,7 @@ Installation
 `itns` is not currently on CRAN, but you can install it from github using the `devtools` package:
 
 ``` r
- library("devtools")
+ library(devtools)
  install_github("gitrman/itns")
 ```
 
