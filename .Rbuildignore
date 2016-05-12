@@ -3,3 +3,5 @@
 ^data-raw$
 ^itns$
 ^exclude_for_now$
+^README\.Rmd$
+^README-.*\.png$
