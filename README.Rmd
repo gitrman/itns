@@ -32,10 +32,10 @@ and the package developers.
 
 # Installation
 
-`itns` is not currently on CRAN but you can install it from github using the `devtools` package:
+`itns` is not currently on CRAN, but you can install it from github using the `devtools` package:
 
-```{r}
-# install.packages("devtools")
+```{r eval=FALSE}
+ install.packages("devtools")
  devtools::install_github("gitrman/itns")
 ```
 
