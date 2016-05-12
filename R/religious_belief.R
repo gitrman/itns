@@ -1,6 +1,6 @@
 #'Describing Data Example - Study of Religous Belief
 #'
-#'An example of data from a study of religous beliefs used in Chapter 3 of the book
+#'An example of data from a study of religious beliefs used in Chapter 3 of the book
 #'\emph{Introduction to the New Statistics}.
 #'
 #'This is a subset of data from an attempt to replicate Study 2 of Gervais & Norenzayan (2012).

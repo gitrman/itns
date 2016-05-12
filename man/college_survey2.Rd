@@ -7,25 +7,25 @@
 \format{A data frame with 138 rows and 14 variables:
 \describe{
  \item{id}{Participant identifier}
- \item{gender}{Sex: Female or Male}
+ \item{gender}{\emph{Female} or \emph{Male}}
  \item{age}{Age in years}
  \item{wealth_sr}{Self-rating of perceived wealth, rated on scale from 1 (well below average) to 5 (well above average).}
  \item{school_year}{5 level school year}
  \item{transfer}{\emph{No} if student did not transfer to current school, \emph{Yes} if student transferred to current school}
  \item{gpa}{Self-reported GPA on a 0-4point scale.}
  \item{subjective_well_being}{Average of 5-item satisfaction with life scale.}
- \item{positive_affect}{Average of 10-item scale of frequency of experiencing positive emotions over the past week.}
- \item{negative_affect}{Average of 10-item scale of frequency of experiencing negative emotions over the past week.}
- \item{academic_engagement}{Average of 5-item scale of academic work, measured on  scale from 1 ((0 hours per week) to 8 (more than 30 hours a week).}
- \item{religious_meaning}{Average of 6-item scale in belief in a meaning to life based on religious ideas.  Rated on a scale from 1 (Strongly Disagree) to 4 (Strongly Agree).}
- \item{health}{Average of 4-item scale of health rating from 1 (Definately false) to 5 (definately true) for statements such as "I am a s healthy as anybody I know" and "My health is excellent"}
- \item{emotion_recognition}{Percentage correct on a 20-item test of recognizing different facial expressions.  Scored out of number attempted, as many participants abandoned the survey during this test due to its length.}
+ \item{positive_affect}{Average of a 10-item scale of frequency of experiencing positive emotions over the past week.}
+ \item{negative_affect}{Average of a 10-item scale of frequency of experiencing negative emotions over the past week.}
+ \item{academic_engagement}{Average of a 5-item scale of academic work, measured on  scale from 1 ((0 hours per week) to 8 (more than 30 hours a week).}
+ \item{religious_meaning}{Average of a 6-item scale in belief in a meaning to life based on religious ideas.  Rated on a scale from 1 (Strongly Disagree) to 4 (Strongly Agree).}
+ \item{health}{Average of 4-item scale of health, rating from 1 (Definitely false) to 5 (definitely true) for statements such as "I am as healthy as anybody I know" and "My health is excellent"}
+ \item{emotion_recognition}{Percentage correct on a 20-item test of recognizing different facial expressions.  Scored out of the number attempted, as many participants abandoned the survey during the test due to its length.}
 }}
 \usage{
 college_survey2
 }
 \description{
-An example of data from a college survey used in Chapters 3 and 5 of the book
+An example of data from a college survey used in Chapters 3 and 5 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

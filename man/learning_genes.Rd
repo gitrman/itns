@@ -25,7 +25,7 @@ Immediate and Persistent Transcriptional Correlates of Long-Term Sensitization T
 learning_genes
 }
 \description{
-An example of data from a study with a two dependent groups design used in Chapter 8 of the book
+An example of data from a study with a two dependent groups design used in Chapter 8 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{
@@ -33,7 +33,7 @@ To what extent does storing a memory modify gene expression in the nervous syste
 animals received sensitization training one one side of the body (left or right).  This produced
 a long-term memory only on the side of training.  1 day after training, animals were dissected and
 sensory neurons from the left and right side of the body were extracted.  Each sample was then
-tested using qPCR to measure the amount of RNA for the Egr or CREB genes.  To what extent does
+tested using qPCR to measure the amount of RNA for the Egr or CREB genes.  The primary research questions were : to what extent does
 training persistently alter the amount of Egr RNA?  To what extent does training persistently alter
 the amount of CREB RNA?
 }

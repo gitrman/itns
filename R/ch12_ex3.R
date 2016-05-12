@@ -1,9 +1,9 @@
 #'Regression Example - Motor Skills
 #'
-#'An example dataset used in Chapter 12 of the book
+#'An example dataset used in Chapter 12 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
-#'The data were colled in a large online study using Mechanial Turk participants.
+#'The data were collected in a large online study using Mechanical Turk participants.
 #'Participants completed 3 mirror tracing trials. In each trial they received a score between 0 and 1
 #'representing the proportion of tracing within the line of the target. A composite score was computed
 #'by averaging the scores from three trials.

@@ -1,6 +1,6 @@
 #'Regression Example - Home Prices
 #'
-#'An example dataset used in Chapter 12 of the book
+#'An example dataset used in Chapter 12 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'This dataset contains a collection of real estate listings in San Luis Obispo county in California, United States.
@@ -17,7 +17,7 @@
 #'  \item{bedrooms}{Number of bedrooms}
 #'  \item{bathrooms}{Number of bathrooms}
 #'  \item{size}{Size of the house in square feet}
-#'  \item{status}{Type of sale - \emph{Foreclosure} or\emph{Short Sale}}
+#'  \item{status}{Type of sale - \emph{Foreclosure} or \emph{Short Sale}}
 #'}
 #'
 #'@references

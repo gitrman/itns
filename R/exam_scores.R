@@ -1,6 +1,6 @@
 #'Correlated Data - Exam Scores
 #'
-#'An example of correlated data used in Chapter 11 of the book
+#'An example of correlated data used in Chapter 11 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'This is a set of exam scores from students in an introductory psychology course.

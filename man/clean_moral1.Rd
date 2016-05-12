@@ -7,7 +7,7 @@
 \format{A data frame with 40 rows and 3 variables:
 \describe{
  \item{participant}{Respondent identifier}
- \item{condition}{Type of words unscrambled: neutral priming or clean priming}
+ \item{condition}{Type of words unscrambled: \emph{neutral priming} or \emph{clean priming}}
  \item{moral_judgements}{Average of moral judgement scale, 6 items, all ranked from 0-9}
 }}
 \source{
@@ -20,7 +20,7 @@ Schnall, S., Benton, J., & Harvey, S. (2008). With a Clean Conscience: Cleanline
 clean_moral1
 }
 \description{
-An example of data from a study with a two independent groups design used in Chapter 7 of the book
+An example of data from a study with a two independent groups design used in Chapter 7 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

@@ -20,11 +20,11 @@ Thomason, N. R., Adajian, T., Barnett, A. E., Boucher, S.,
 thomason3
 }
 \description{
-An example of data for the repeated measures design used in Chapter 8 of the
+An example of data for the repeated measures design used in Chapter 8 of the 
 book \emph{Introduction to the New Statistics}.
 }
 \details{
-Third study by Thomason et al investigating techniques to improve critical
+This is data for the third study by Thomason et al investigating techniques to improve critical
 thinking. This study used the HCTA measure of critical thinking, and a paired
 design with N = 39. See \code{\link{thomason1}} for more details.
 }

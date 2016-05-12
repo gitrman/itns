@@ -8,7 +8,7 @@
 \describe{
  \item{id}{Participant ID}
  \item{race}{\emph{black} or \emph{white}}
- \item{ses}{Socioeconomic status: \emph{high} or {low}}
+ \item{ses}{Socio-economic status: \emph{high} or \emph{low}}
  \item{blame}{Rating of blame on 1 to 6 scale}
 }}
 \source{
@@ -18,7 +18,7 @@ You can find the materials and data on the Open Science Framework: \url{https://
 blame1
 }
 \description{
-An example dataset used in Chapter 14 of the book
+An example dataset used in Chapter 14 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{
@@ -29,7 +29,7 @@ about the perpetrator were varied to indicate that he had either low or high soc
 Participants were asked to envision serving on a jury charged with judging the perpetrator, and rated how blameworthy
 they found him on a scale from 1 to 6.
 
-This is a simplified data from study 1 set graciously shared by the authors.
+This is a simplified dataset from the study, that has been graciously shared by the authors.
 }
 \references{
 Cumming, G., & Calin-Jageman, R. (2017).

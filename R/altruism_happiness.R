@@ -1,13 +1,13 @@
 #'Regression Example - Altruism and Happiness
 #'
-#'An example dataset used in Chapter 12 of the book
+#'An example dataset used in Chapter 12 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'@source
 #'Most of the data comes from:
 #'
 #'Brethel-Haurwitz, K. M., & Marsh, A. a. (2014). Geographical differences in subjective well-being predict extraordinary altruism.
-#'\emph{'Psychological Science, 25}, 762-771. \url{http://doi.org/10.1177/0956797613516148}
+#'\emph{Psychological Science, 25}, 762-771. \url{http://doi.org/10.1177/0956797613516148}
 #'
 #'Data were extracted from Figure 1 using \url{http://arohatgi.info/WebPlotDigitizer/app/}
 #'

@@ -28,7 +28,7 @@ The datasets can be used to replicate analyses that appear in \emph{Introduction
 the New Statistics}, and to work through the book's end-of-chapter exercises.
 
 At present the itns package contains all datasets from the book except those used in 
-the meta-analysis chapters. Those will be added at a later date.
+the meta-analysis chapter. Those will be added at a later date.
 }
 \references{
 Cumming, G., & Calin-Jageman, R. (2017).

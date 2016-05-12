@@ -1,6 +1,6 @@
 #'Two Independent Groups - Math Gender IAT
 #'
-#'An example of data from a study with a two independent groups design used in Chapter 7 of the book
+#'An example of data from a study with a two independent groups design used in Chapter 7 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'To what extent is gender related to implicit attitudes about bias?
@@ -15,8 +15,8 @@
 #'@format A data frame with 243 rows and 4 variables:
 #'\describe{
 #'  \item{sessionid}{Respondent identifier}
-#'  \item{location}{the lab that collected the data (ithaca or sdsu)}
-#'  \item{gender}{Gender: male or female}
+#'  \item{location}{The lab that collected the data (ithaca or sdsu)}
+#'  \item{gender}{\emph{male} or \emph{female}}
 #'  \item{iat_score}{The score on the IAT test, where higher scores represent stronger negative bias towards math and negative scores represent stronger negative bias towards art.}
 #'}
 #'

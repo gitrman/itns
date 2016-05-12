@@ -1,6 +1,6 @@
 #'Two Independent Groups - Clean Moral Original Study
 #'
-#'An example of data from a study with a two independent groups design used in Chapter 7 of the book
+#'An example of data from a study with a two independent groups design used in Chapter 7 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'Some researchers believe that moral judgements are based not only on rational considerations but on one's current emotional state.
@@ -12,7 +12,7 @@
 #'@format A data frame with 40 rows and 3 variables:
 #'\describe{
 #'  \item{participant}{Respondent identifier}
-#'  \item{condition}{Type of words unscrambled: neutral priming or clean priming}
+#'  \item{condition}{Type of words unscrambled: \emph{neutral priming} or \emph{clean priming}}
 #'  \item{moral_judgements}{Average of moral judgement scale, 6 items, all ranked from 0-9}
 #'}
 #'
@@ -32,7 +32,7 @@
 
 #'Two Independent Groups - Clean Moral Replication Study
 #'
-#'An example of data from a study with a two independent groups design used in Chapter 7 of the book
+#'An example of data from a study with a two independent groups design used in Chapter 7 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'This data comes from a replication of the study described in \code{\link{clean_moral1}}
@@ -43,7 +43,7 @@
 #'@format A data frame with 208 rows and 3 variables:
 #'\describe{
 #'  \item{participant}{Respondent identifier}
-#'  \item{condition}{Type of words unscrambled: neutral priming or clean priming}
+#'  \item{condition}{Type of words unscrambled: \emph{neutral priming} or \emph{clean priming}}
 #'  \item{moral_judgements}{Average of moral judgement scale, 6 items, all ranked from 0-9}
 #'}
 #'
@@ -53,7 +53,7 @@
 #'Johnson, D. J., Cheung, F., & Donnellan, M. B. (2014). Does cleanliness influence moral judgments?: A direct replication of Schnall, Benton, and Harvey (2008).
 #'\emph{Social Psychology, 45}, 209-215. \url{doi:10.1027/1864-9335/a000186}
 #'
-#'Note that this a cleaned up version of the online dataset - all participants excluded for various reasons (e.g. experimenter error) have been deleted.
+#'Note that this a cleaned up version of the dataset - all participants excluded for various reasons (e.g. experimenter error) have been deleted.
 #'
 #'@references
 #'Cumming, G., & Calin-Jageman, R. (2017).

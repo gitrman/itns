@@ -3,7 +3,7 @@
 \docType{data}
 \name{organic_moral}
 \alias{organic_moral}
-\title{One Way Design - organic Foods and Moral Judgements}
+\title{One Way Design - Organic Foods and Moral Judgements}
 \format{A data frame with 106 rows and 2 variables:
 \describe{
  \item{food}{Three levels - \emph{comfort}, \emph{control}, or \emph{organic}}
@@ -24,7 +24,7 @@ Eskine, K. J. (2013). Wholesome Foods and Wholesome Morals?: Organic Foods Reduc
 organic_moral
 }
 \description{
-An example dataset used in Chapter 13 of the book
+An example dataset used in Chapter 13 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{
@@ -33,9 +33,9 @@ participants to rate images of organic food, neutral (control) food, or comfort 
 Next, all participants completed a moral judgements scale in which they read different moral
 scenarios and judged how wrong they were (scale of 1-7).
 
-The original study examining this phenoment was Eskine (2013).  The primary research questions were:
+The original study examining this phenomenon was Eskine (2013).  The primary research questions were:
 (i) Does judgmentalness increase after organic food exposure compared to control food, and (ii)
-Does judgementalness decrease after comfort food exposure compared to control food?
+Does judgmentalness decrease after comfort food exposure compared to control food?
 
 Moery & Calin-Jageman (under review) conducted a close replication of the study.
 The same research questions were asked in the close replication.  The data here comes from the

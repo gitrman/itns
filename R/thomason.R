@@ -1,6 +1,6 @@
 #'Two Dependent Groups - Thomason Study 1
 #'
-#'An example of data for the repeated measures design used in Chapter 8 of the
+#'An example of data for the repeated measures design used in Chapter 8 of the 
 #'book \emph{Introduction to the New Statistics}.
 #'
 #'Many colleges require a course in critical thinking, but such courses are not
@@ -11,9 +11,9 @@
 #'mapping with a form of mastery learning. Studies were conducted in the U.S.,
 #'Canada, and the U.K., and each study used a single group of students. Students
 #'were tested on various well-established measures of critical thinking, both
-#'before (the Pretest) and after (the Posttest) training. Group sizes ranged
+#'before (the Pre-test) and after (the Post-test) training. Group sizes ranged
 #'from 7 to 39. All the Thomason studies compared the two conditions, Pretest
-#'and Posttest, within participants, and therefore used the paired design. The
+#'and Posttest, within participants, and therefore used a paired design. The
 #'first Thomason study, Thomason 1, used a group of N = 12 students, whose
 #'critical thinking ability was assessed at Pretest and Posttest using the
 #'Logical Reasoning section of the Law School Aptitude Test (LSAT).
@@ -38,10 +38,10 @@
 
 #'Two Dependent Groups - Thomason Study 2
 #'
-#'An example of data for the repeated measures design used in Chapter 8 of the
+#'An example of data for the repeated measures design used in Chapter 8 of the 
 #'book \emph{Introduction to the New Statistics}.
 #'
-#'Second study by Thomason et al investigating techniques to improve critical
+#'This is data for the second study by Thomason et al investigating techniques to improve critical
 #'thinking. See \code{\link{thomason1}} for more details.
 #'
 #'@format A data frame with 16 rows and 2 variables:
@@ -65,10 +65,10 @@
 
 #'Two Dependent Groups - Thomason Study 3
 #'
-#'An example of data for the repeated measures design used in Chapter 8 of the
+#'An example of data for the repeated measures design used in Chapter 8 of the 
 #'book \emph{Introduction to the New Statistics}.
 #'
-#'Third study by Thomason et al investigating techniques to improve critical
+#'This is data for the third study by Thomason et al investigating techniques to improve critical
 #'thinking. This study used the HCTA measure of critical thinking, and a paired
 #'design with N = 39. See \code{\link{thomason1}} for more details.
 #'

@@ -14,7 +14,7 @@
 exam_scores
 }
 \description{
-An example of correlated data used in Chapter 11 of the book
+An example of correlated data used in Chapter 11 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

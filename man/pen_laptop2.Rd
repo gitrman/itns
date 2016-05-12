@@ -6,13 +6,13 @@
 \title{Two Independent Groups  - Pen vs Laptop Study 2}
 \format{A data frame with 151 rows and 2 variables:
 \describe{
- \item{group}{Independent variable: Laptop or Pen}
+ \item{group}{Independent variable: \emph{Laptop} or \emph{Pen}}
  \item{transcription}{Dependent variable: Transcription score}
 }}
 \source{
 Mueller, P. A., & Oppenheimer, D. M. (2014). The pen is
  mightier than the keyboard: Advantages of longhand over laptop note taking.
- \emph{Psychological Science, 25}, 1159-1168. doi:10.1177/0956797614524581
+ \emph{Psychological Science, 25}, 1159-1168. \url{http://doi.org/10.1177/0956797614524581}
 }
 \usage{
 pen_laptop2

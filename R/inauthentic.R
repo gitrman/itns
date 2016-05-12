@@ -1,6 +1,6 @@
 #'One Way Design - Inauthenticity
 #'
-#'An example dataset used in Chapter 13 of the book
+#'An example dataset used in Chapter 13 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'"To thine own self be true" is the advice of Polonious in Hamlet.  What happens, though, when we act contrary
@@ -8,7 +8,7 @@
 #'inauthentic leads to feelings of impurity, and that the feeling of impurity drives efforts at moral cleansing,
 #'either by doing good deeds or by seeking other cleansing acts and rituals.
 #'
-#'In one study (Study 2), particpants were asked to recall a memory of a time when they had behaved either as their
+#'In one study (Study 2), participants were asked to recall a memory of a time when they had behaved either as their
 #'authentic true selves or when they had behaved inauthentically.  There were four independent groups:
 #'\enumerate{
 #'  \item Authentic general: participants recalled a time when they had behaved as their authentic true selves
@@ -17,17 +17,17 @@
 #'  \item Inauthentic  - not lying: participants recalled a time when they had behaved inauthentically, but in a way that was not just related to lying to someone.
 #'}
 #'
-#'After recalling these memories, participants were asked to rate how much they liked desired different products from 1
-#'(completely undersireable)  to 7 (completely desireable).  The products were either cleaning-related products or neutral products.
+#'After recalling these memories, participants were asked to rate how much they desired different products from 1
+#'(completely undesirable)  to 7 (completely desirable).  The products were either cleaning-related products or neutral products.
 #'For each participant, an average was created for the cleaning-related products and for the neutral products.
 #'Participants also completed a scale measuring how much they felt alienated from their true selves.
 #'
 #'@format A data frame with 838 rows and 4 variables:
 #'\describe{
 #'  \item{group}{Experimental condition (four levels)}
-#'  \item{cleaning}{Cleanign products score}
+#'  \item{cleaning}{Cleaning products score}
 #'  \item{neutral}{Neutral products score}
-#'  \item{alienation}{Alientation score}
+#'  \item{alienation}{Alienation score}
 #'}
 #'
 #'@source

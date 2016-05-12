@@ -26,7 +26,7 @@ Effects of Fast Food Branding on Young Children's Taste Preferences. \emph{Archi
 labels_flavor
 }
 \description{
-An example of data from a study with a two dependent groups design used in Chapter 8 of the book
+An example of data from a study with a two dependent groups design used in Chapter 8 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{
@@ -40,7 +40,7 @@ contents and poured the same Welch's grape juice into each bottle.
 After each sample, participants rated their enjoyment of that juice (scale from 1 to 10).
 They also reported how much they would pay for a 1 gallon bottle of that juice ($1-10, whole dollar amounts).
 Finally, participants were debriefed about the study. Participants who expressed some suspicion during the debriefing
-that all the juices were actually the same were marked as \emph{suspcious}; participants who expreseed no suspcion were marked \emph{not suspicious}.
+that all the juices were actually the same were marked as \emph{suspicious}; participants who expressed no suspicion were marked \emph{not suspicious}.
 
 This is a simplified dataset which contains data for only 2 of the 3 juice labels: Organic and Generic.
 }

@@ -1,6 +1,6 @@
-#'Two Dependent Groups - Emotion and Heartrate
+#'Two Dependent Groups - Emotion and Heart rate
 #'
-#'An example of data from a study with a two dependent groups design used in Chapter 8 of the book
+#'An example of data from a study with a two dependent groups design used in Chapter 8 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'To what extent do emotional responses alter heart rate?  To find out,  participants were asked to
@@ -20,7 +20,7 @@
 #'  \item{first_emotion}{\emph{anger} or \emph{happiness}, determined by coin flip}
 #'  \item{hr_baseline}{Heart rate measured in beats per minute during baseline period prior to emotion recall}
 #'  \item{hr_anger}{Heart rate measured in beats per minute during recall of times of intense anger}
-#'  \item{sr_anger}{Self-reported intensity of feeling angry during angry recall, scale from 0-8}
+#'  \item{sr_anger}{Self-reported intensity of feeling angry during angry recall, scale from 0 - 8}
 #'}
 #'
 #'@source

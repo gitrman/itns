@@ -1,6 +1,6 @@
-#'One Way Design - organic Foods and Moral Judgements
+#'One Way Design - Organic Foods and Moral Judgements
 #'
-#'An example dataset used in Chapter 13 of the book
+#'An example dataset used in Chapter 13 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'Do organic foods make us morally smug?  To what extent?  To find out, Eskine (2013) asked
@@ -8,9 +8,9 @@
 #'Next, all participants completed a moral judgements scale in which they read different moral
 #'scenarios and judged how wrong they were (scale of 1-7).
 #'
-#'The original study examining this phenoment was Eskine (2013).  The primary research questions were:
+#'The original study examining this phenomenon was Eskine (2013).  The primary research questions were:
 #'(i) Does judgmentalness increase after organic food exposure compared to control food, and (ii)
-#'Does judgementalness decrease after comfort food exposure compared to control food?
+#'Does judgmentalness decrease after comfort food exposure compared to control food?
 #'
 #'Moery & Calin-Jageman (under review) conducted a close replication of the study.
 #'The same research questions were asked in the close replication.  The data here comes from the

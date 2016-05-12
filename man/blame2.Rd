@@ -8,7 +8,7 @@
 \describe{
  \item{id}{Participant ID}
  \item{race}{\emph{black} or \emph{white}}
- \item{ses}{Socioeconomic status: \emph{high} or {low}}
+ \item{ses}{Socio-economic status: \emph{high} or {low}}
  \item{blame}{Rating of blame on 1 to 6 scale}
 }}
 \source{
@@ -18,20 +18,20 @@ You can find the materials and data on the Open Science Framework: \url{https://
 blame2
 }
 \description{
-An example dataset used in Chapter 14 of the book
+An example dataset used in Chapter 14 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{
-The data here is from a study that was a direct replication of that described in @seealso \code{\link{blame1}}.
+The data here is from a study that was a direct replication of that described in \code{\link{blame1}}.
 
-A new set of online U.S. participants again read about a crime committed.  Indicators of race and SES were again
-varied and participants rate blame on a scale from 1 to 6.
+A new set of online U.S. participants again read about a crime being committed.  Indicators of race and SES were again
+varied, and participants rate blame on a scale from 1 to 6.
 
 One key difference with this replication is that the description of the crime was altered to make it clear that
 the perpetrator was guilty.  Thus, blame ratings are higher than in the first study, where it was slightly ambiguous
 if the person described has committed the crime.
 
-This is a simplified data from study 2 set graciously shared by the authors.
+This is a simplified dataset from the study, that has been graciously shared by the authors.
 }
 \references{
 Cumming, G., & Calin-Jageman, R. (2017).

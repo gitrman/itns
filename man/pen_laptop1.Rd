@@ -6,13 +6,13 @@
 \title{Two Independent Groups  - Pen vs Laptop Study 1}
 \format{A data frame with 65 rows and 2 variables:
 \describe{
- \item{group}{Independent variable: Laptop or Pen}
+ \item{group}{Independent variable: \emph{Laptop} or \emph{Pen}}
  \item{transcription}{Dependent variable: Transcription score}
 }}
 \source{
 Mueller, P. A., & Oppenheimer, D. M. (2014). The pen is
  mightier than the keyboard: Advantages of longhand over laptop note taking.
- \emph{Psychological Science, 25}, 1159-1168. doi:10.1177/0956797614524581
+ \emph{Psychological Science, 25}, 1159-1168. \url{http://doi.org/10.1177/0956797614524581}
 }
 \usage{
 pen_laptop1
@@ -27,7 +27,7 @@ taking notes by hand rather than using a computer. They conducted a study in
 which students were randomly assigned to take notes using a pen or by typing
 on a laptop. The study found that students learned more after taking notes in
 longhand than after typing notes. The researchers wondered whether writing
-encouraged expression of concepts in the student's own words, whereas typing
+encouraged expression of concepts in the students' own words, whereas typing
 encouraged relatively mindless transcription that led to relatively poor
 learning. To investigate, the researchers devised a transcription score, the
 percentage of notes that was verbatim transcription from the lecture.

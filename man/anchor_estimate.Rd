@@ -7,7 +7,7 @@
 \format{A data frame with 90 rows and 8 variables:
 \describe{
  \item{sessionid}{Respondent identifier}
- \item{location}{Lab that ran the study.  Equal to "Ithica" for all participants in this dataset.}
+ \item{location}{Lab that ran the study.  Equal to "ithaca" for all participants in this dataset.}
  \item{babies_anchor}{Babies Anchor: "lowanchor" (100) or "highanchor" (50,000)}
  \item{babies_est}{Participants' estimate of number of  babies born per day}
  \item{chicago_anchor}{Chicago Anchor: "low anchor" (200,000) or "high anchor" (5,000,000)}
@@ -31,14 +31,14 @@ Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152.
 anchor_estimate
 }
 \description{
-An example of data from a study with a two independent groups design used in Chapter 7 of the book
+An example of data from a study with a two independent groups design used in Chapter 7 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{
-Psychological research suggests that how a question is worded can influence people's judgments.
+Psychological research suggests that how a question is worded can influence people's judgements.
 This is known as the 'anchor-adjustment' effect.  A team of psychologists conducted a multi-site study
 attempting to replicate this phenomenon. Participants were asked to estimate three different quantities (number of
-babies born in the U.S. each day; population of Chicago; height of Mounter
+babies born in the U.S. each day; population of Chicago; height of Mount
 Everest).  For each question, though, participants were either given a low or
 high numerical anchor (see below).  For example, they were told either that
 the number of babies born in the U.S. was more than 200,000 (low anchor) or

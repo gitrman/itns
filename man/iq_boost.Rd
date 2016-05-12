@@ -13,13 +13,13 @@
 iq_boost
 }
 \description{
-An example dataset used in Chapter 13 of the book
+An example dataset used in Chapter 13 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{
 This is a fake dataset created for the purposes of teaching / illustration.
 
-A company is trying to develop a smart drug that can boost IQ.  Because the herbal remedy gingko biloba has been reputed to enhance cognition,
+A company is trying to develop a smart drug that can boost IQ.  Because the herbal remedy ginkgo biloba has been reputed to enhance cognition,
 they isolate 5 different compounds from gingko leaves (Drugs A, B, C, D, and E).  To see if any of these have promise,
 60 volunteers are recruited and randomly assigned to receive either placebo, Drug A, Drug B, Drug C, Drug D, or Drug E
 (let's assume all the compounds are known to be completely safe).  After drug administration, all the participants take an IQ test.

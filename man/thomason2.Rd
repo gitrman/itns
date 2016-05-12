@@ -13,11 +13,11 @@
 thomason2
 }
 \description{
-An example of data for the repeated measures design used in Chapter 8 of the
+An example of data for the repeated measures design used in Chapter 8 of the 
 book \emph{Introduction to the New Statistics}.
 }
 \details{
-Second study by Thomason et al investigating techniques to improve critical
+This is data for the second study by Thomason et al investigating techniques to improve critical
 thinking. See \code{\link{thomason1}} for more details.
 }
 \section{Source}{

@@ -6,7 +6,7 @@
 \title{Impact of Outliers - Sexual Partners}
 \format{A data frame with 95 rows and 2 variables:
 \describe{
- \item{sex}{Sex: female or male}
+ \item{sex}{\emph{female} or \emph{male}}
  \item{partners}{Number of sexual partners}
 }}
 \source{

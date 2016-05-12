@@ -15,7 +15,7 @@
 religious_belief
 }
 \description{
-An example of data from a study of religous beliefs used in Chapter 3 of the book
+An example of data from a study of religious beliefs used in Chapter 3 of the book
 \emph{Introduction to the New Statistics}.
 }
 \details{

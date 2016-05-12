@@ -1,12 +1,12 @@
 #'Two Dependent Groups - Habituation
 #'
-#'An example of data from a study with a two dependent groups design used in Chapter 8 of the book
+#'An example of data from a study with a two dependent groups design used in Chapter 8 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'To what extent does the pattern of training influence learning?  To find out, sea slugs were given
-#'3 differnt types of experience.  \emph{Control animals} just sat in their aquarium.  \emph{Trained slugs} received
+#'3 different types of experience.  \emph{Control animals} just sat in their aquarium.  \emph{Trained slugs} received
 #'3 days of habituation training - this was basically just brushing the sea slug for 15 minutes, then
-#'taking a 15 minute break, then repeating...this type of training causes the sea slug to learn to
+#'taking a 15 minute break, then repeating. This type of training causes the sea slug to learn to
 #'ignore the brushing.  The last group of slugs received \emph{massed training}, meaning that they got the
 #'same brushing as the trained slugs but all packed into a single day with no breaks whatsoever.
 #'
@@ -25,7 +25,7 @@
 #'@source
 #'This data is availble online at \url{https://osf.io/6ew4i} and was reported in Figure 4 of:
 #'
-#'Holmes, G., Herdegen, S., Schuon, J., Cyriac, A., Lass, J., Conte, C.,..., Calin-Jageman, R. J. (2014).
+#'Holmes, G., Herdegen, S., Schuon, J., Cyriac, A., Lass, J., Conte, C., ..., Calin-Jageman, R. J. (2014).
 #'Transcriptional analysis of a whole-body form of long-term habituation in Aplysia californica.
 #'\emph{Learning & Memory, 22}, 11-23. \url{http://doi.org/10.1101/lm.036970.114}
 #'

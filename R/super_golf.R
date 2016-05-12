@@ -1,12 +1,12 @@
 #'Two Independent Groups - Superstition and Golf
 #'
-#'An example of data from a study with a two independent groups design used in Chapter 7 of the book
+#'An example of data from a study with a two independent groups design used in Chapter 7 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'To what extent can superstition influence performance?  To find out, participants were asked to complete a 10 shot golf task.
 #'Before the game started, though, participants drew a ball from the bag.  Half the balls were plain old golf balls, and if the participant
-#'drew one of these the experimenter simply said "This is the ball you will use" these participants were considered a \emph{control}.
-#'The other half of the balls were marked with lucky 4-leaf clovers, and if drawn the experimenter explaimed "Wow! You get to use the lucky ball!".
+#'drew one of these the experimenter simply said "This is the ball you will use."  These participants were considered a \emph{control}.
+#'The other half of the balls were marked with lucky 4-leaf clovers, and if drawn the experimenter exclaimed "Wow! You get to use the lucky ball!".
 #'These participants were considered \emph{lucky}.
 #'After the golf task, participants completed a two item manipulation check: "Before starting this task, I believed that the golf
 #'ball assigned to me was lucky" and "Now that I have completed this task, I believe that the golf ball assigned to me is lucky."
@@ -17,8 +17,8 @@
 #'  \item{id}{Respondent identifier}
 #'  \item{condition}{\emph{Control} for normal ball, \emph{Lucky} for lucky ball}
 #'  \item{gender}{Gender: Female or Male}
-#'  \item{felt_lucky_1}{First item on manipulation check, rated agreement with statment "Before starting this task, I believed the golf ball assigned to me was lucky" on a scale from 1 to 5.}
-#'  \item{felt_lucky_2}{Second item on manipulation check, rated agreement with statment "Now that I have completed this task, I believe that the golf ball assigned to me is lucky" on a scale from 1 to 5.}
+#'  \item{felt_lucky_1}{First item on manipulation check, rated agreement with statement "Before starting this task, I believed the golf ball assigned to me was lucky" on a scale from 1 to 5.}
+#'  \item{felt_lucky_2}{Second item on manipulation check, rated agreement with statement "Now that I have completed this task, I believe that the golf ball assigned to me is lucky" on a scale from 1 to 5.}
 #'  \item{felt_lucky_avg}{Average of the two \emph{felt_lucky} items}
 #'  \item{golf_score}{Number of shots made out of 10.}
 #'}

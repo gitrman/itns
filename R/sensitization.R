@@ -1,6 +1,6 @@
 #'Two Dependent Groups - Sensitization
 #'
-#'An example of data from a study with a two dependent groups design used in Chapter 8 of the book
+#'An example of data from a study with a two dependent groups design used in Chapter 8 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'To what extent does a painful experience modify reflex responses?  To find out, sea slugs had their

@@ -24,7 +24,7 @@ Immediate and Persistent Transcriptional Correlates of Long-Term Sensitization T
 sensitization
 }
 \description{
-An example of data from a study with a two dependent groups design used in Chapter 8 of the book
+An example of data from a study with a two dependent groups design used in Chapter 8 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

@@ -1,16 +1,16 @@
-#'Correlated Data - Social Inclusion and Exclusion
+#'Correlation Example - Social Inclusion and Exclusion
 #'
-#'An example of correlated data used in Chapter 11 of the book
+#'A dataset used in Chapter 11 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
-#'This data is from Cavenaugh & Calin-Jageman (in prep), a registered replication of the finding by
-#'Zhong & Leonardelli (2008) that feeling socially excluded makes one feel physically cold.
+#'This data is from Cavenaugh & Calin-Jageman (in prep), a registered replication of a study by
+#'Zhong & Leonardelli (2008) that found feeling socially excluded makes one feel physically cold.
 #'
 #'Participants wrote an essay about being socially included or excluded.  They then reported what they
-#'perceived to be the room temperature, ostensabily for a maintenance issue.  Temperatures were
-#'reported in Fahrenheit but are reported here in Celcius.
+#'perceived to be the room temperature, ostensibly for a maintenance issue.  Temperatures were
+#'reported in Fahrenheit but are reported here in Celsius.
 #'
-#'As a manipulation check, two raters looked at each essay and rated each on a scale from -5
+#'As a manipulation check, two raters looked at the essay and it on a scale from -5
 #'(completely excluded) to 5 (completely included).  Ratings were made blind to condition.
 #'
 #'

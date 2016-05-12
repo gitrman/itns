@@ -12,7 +12,7 @@
  \item{bedrooms}{Number of bedrooms}
  \item{bathrooms}{Number of bathrooms}
  \item{size}{Size of the house in square feet}
- \item{status}{Type of sale - \emph{Foreclosure} or\emph{Short Sale}}
+ \item{status}{Type of sale - \emph{Foreclosure} or \emph{Short Sale}}
 }}
 \source{
 This is a subset of the first 300 rows of the full dataset, which can be found at
@@ -22,7 +22,7 @@ This is a subset of the first 300 rows of the full dataset, which can be found a
 home_prices
 }
 \description{
-An example dataset used in Chapter 12 of the book
+An example dataset used in Chapter 12 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

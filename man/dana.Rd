@@ -6,8 +6,9 @@
 \title{Impact of Outliers - Target Contact}
 \format{A data frame with 38 rows and 2 variables:
 \describe{
- \item{group}{Group: group one or group two (independent variable)}
- \item{contact}{Contact time in seconds (dependent variable)} }}
+ \item{group}{Independent variable: \emph{group one} or \emph{group two}}
+ \item{contact}{Dependent variable: Contact time in seconds}
+}}
 \source{
 Wilcox, R. R. (2009). \emph{Basic statistics: Understanding
  conventional methods and modern insights}. New York: Oxford University
