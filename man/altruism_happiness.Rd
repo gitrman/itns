@@ -11,7 +11,7 @@
  \item{kidney_rate}{Rate of non-directed kidney donation (# donations / total state population) from 1999-2010}
  \item{well_being_2013}{Well being score in 2013}
  \item{well_being_2010_rounded}{Well Being score from 2010 rounded to two decimal places}
- \item{kidney_Rate_per1000}{\emph{kidney_rate} variable rescaled so that the donation rate is expressed per thousand people}
+ \item{kidney_rate_per1000}{\emph{kidney_rate} variable rescaled so that the donation rate is expressed per thousand people}
  \item{wb_change}{Change in well being from 2010 to 2013. Note that the rounded values were used to compute this variable,
  for consistency with the Excel file from which this dataset was extracted.}
 }}

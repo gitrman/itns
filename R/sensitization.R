@@ -12,7 +12,6 @@
 #'\describe{
 #'  \item{animal_id}{Identifier}
 #'  \item{trained_side}{Side on which animal received sensitization training (Left or Right)}
-#'  \item{enjoy_organic}{Degree of enjoyment of the juice sample with the Organic label, 1-10}
 #'  \item{trained_base}{Duration (in seconds) of tail-elicited siphon withdrawal reflex on trained side, average of 3 consecutive measures, taken before training}
 #'  \item{trained_24h}{Duration (in seconds) of tail-elicited siphon withdrawal reflex on trained side, average of 3 consecutive measures, taken 24 hours after training}
 #'  \item{untrained_base}{Duration (in seconds) of tail-elicited siphon withdrawal reflex on untrained side, average of 3 consecutive measures, taken before training}

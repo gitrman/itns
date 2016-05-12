@@ -15,8 +15,8 @@
 #'
 #'@format A data frame with 65 rows and 2 variables:
 #'\describe{
-#'  \item{Group}{Independent variable: Laptop or Pen}
-#'  \item{Transcription}{Dependent variable: Transcription score}
+#'  \item{group}{Independent variable: Laptop or Pen}
+#'  \item{transcription}{Dependent variable: Transcription score}
 #'}
 #'
 #'@source Mueller, P. A., & Oppenheimer, D. M. (2014). The pen is
@@ -39,8 +39,8 @@
 #'\code{\link{pen_laptop1}} for details.
 #'@format A data frame with 151 rows and 2 variables:
 #'\describe{
-#'  \item{Group}{Independent variable: Laptop or Pen}
-#'  \item{Transcription}{Dependent variable: Transcription score}
+#'  \item{group}{Independent variable: Laptop or Pen}
+#'  \item{transcription}{Dependent variable: Transcription score}
 #'}
 #'
 #'@source Mueller, P. A., & Oppenheimer, D. M. (2014). The pen is

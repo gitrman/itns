@@ -27,7 +27,7 @@
 #'
 #'Holmes, G., Herdegen, S., Schuon, J., Cyriac, A., Lass, J., Conte, C.,..., Calin-Jageman, R. J. (2014).
 #'Transcriptional analysis of a whole-body form of long-term habituation in Aplysia californica.
-#'\emph{Learning & Memory, 22}, 11–23. \url{http://doi.org/10.1101/lm.036970.114}
+#'\emph{Learning & Memory, 22}, 11-23. \url{http://doi.org/10.1101/lm.036970.114}
 #'
 #'@references
 #'Cumming, G., & Calin-Jageman, R. (2017).

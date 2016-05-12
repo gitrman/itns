@@ -25,7 +25,7 @@
 #'The original study investigating this phenomenon was:
 #'
 #'Eskine, K. J. (2013). Wholesome Foods and Wholesome Morals?: Organic Foods Reduce Prosocial Behavior and Harshen Moral Judgments.
-#'\emph{Social Psychological and Personality Science, 4}, 251–254. \url{http://doi.org/10.1177/1948550612447114}
+#'\emph{Social Psychological and Personality Science, 4}, 251-254. \url{http://doi.org/10.1177/1948550612447114}
 #'
 #'@format A data frame with 106 rows and 2 variables:
 #'\describe{

@@ -1,0 +1,33 @@
+#' Datasets for the book Introduction to the New Statistics
+#' 
+#' The itns package contains datasets from psychology studies 
+#' used in book \emph{Introduction to the New Statistics} by Geoff Cumming 
+#' and Robert Calin-Jageman, published by Routledge in August 2016.
+#' 
+#' The original source of the datasets is a series of Excel files found on the 
+#' \emph{Introduction to the New Statistics} website.  Those Excel files have been 
+#' converted to R data frames and bundled together in the itns package. In addition: 
+#' 
+#' \itemize{
+#'    \item All variable names have been converted to lower case.
+#'    \item For some data sets, variable names have been altered 
+#'          in order to conform with R data naming rules
+#'          (e.g., some variable names in the Excel files started with a number, which 
+#'          is not allowed in R).
+#'    \item Some datasets have been tidied using the \code{tidyr}  package 
+#'          in order to facilitate analyses in R.
+#' }
+#' 
+#' The datasets can be used to replicate analyses that appear in \emph{Introduction to
+#' the New Statistics}, and to work through the book's end-of-chapter exercises.
+#' 
+#' At present the itns package contains all datasets from the book except those used in 
+#' the meta-analysis chapters. Those will be added at a later date.
+#' 
+#'@references
+#'Cumming, G., & Calin-Jageman, R. (2017).
+#'  \emph{Introduction to the New Statistics}. New York; Routledge.
+#'   
+#' @docType package
+#' @name itns-package
+NULL

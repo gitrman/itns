@@ -25,13 +25,14 @@
 #'  \item{academic_motivation_intrinsic}{Average score on 6-item measure of intrinsic reasons for going to college.}
 #'  \item{academic_motivation_extrinsic}{Average score on 7-item measure of extinsic reasons for going to college.}
 #'  \item{academic_motivation_amotivation}{Average score on 2-item measure of feeling unmotivated about college}
-#'  \item{inteligence_value}{Measure of degree to which participant values intelligence, rated on a scale from 1 (strongly agree) to 5 (strongly agree).}
+#'  \item{intelligence_value}{Measure of degree to which participant values intelligence, rated on a scale from 1 (strongly agree) to 5 (strongly agree).}
 #'  \item{raven_score}{Percentage correct out of 8 items on the Raven Progressive Matrix Scale, a scale of logical thinking/IQ}.
 #'}
 #'
 #'@references Cumming, G., & Calin-Jageman, R. (2017).
 #'  \emph{Introduction to the New Statistics}. New York; Routledge.
 "college_survey1"
+
 
 
 #'Describing Data Example - College Student Attitude Survey 2
@@ -56,7 +57,7 @@
 #'  \item{academic_engagement}{Average of 5-item scale of academic work, measured on  scale from 1 ((0 hours per week) to 8 (more than 30 hours a week).}
 #'  \item{religious_meaning}{Average of 6-item scale in belief in a meaning to life based on religious ideas.  Rated on a scale from 1 (Strongly Disagree) to 4 (Strongly Agree).}
 #'  \item{health}{Average of 4-item scale of health rating from 1 (Definately false) to 5 (definately true) for statements such as "I am a s healthy as anybody I know" and "My health is excellent"}
-#'  \item{emotional_recognition}{Percentage correct on a 20-item test of recognizing different facial expressions.  Scored out of number attempted, as many participants abandoned the survey during this test due to its length.}
+#'  \item{emotion_recognition}{Percentage correct on a 20-item test of recognizing different facial expressions.  Scored out of number attempted, as many participants abandoned the survey during this test due to its length.}
 #'}
 #'
 #'@references Cumming, G., & Calin-Jageman, R. (2017).

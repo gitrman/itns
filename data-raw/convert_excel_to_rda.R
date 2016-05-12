@@ -373,21 +373,21 @@
   # IV, Cleaning, Alienation, Neutral
   i <- 1:219
   j <- 1
-  g1 <- data.frame(group = as.character("auth_notruth"), cleaning = x[i, j], netural = y[i, j], alienation = z[i,  j])
+  g1 <- data.frame(group = as.character("auth_notruth"), cleaning = x[i, j], neutral = y[i, j], alienation = z[i,  j])
 
 
   i <- 1:214
   j <- 2
-  g2 <- data.frame(group = as.character("auth_gen"), cleaning = x[i, j], netural = y[i, j], alienation = z[i,  j])
+  g2 <- data.frame(group = as.character("auth_gen"), cleaning = x[i, j], neutral = y[i, j], alienation = z[i,  j])
 
 
   i <- 1:199
   j <- 3
-  g3 <- data.frame(group = as.character("inauth_notruth"), cleaning = x[i, j], netural = y[i, j], alienation = z[i,  j])
+  g3 <- data.frame(group = as.character("inauth_notruth"), cleaning = x[i, j], neutral = y[i, j], alienation = z[i,  j])
 
   i <- 1:206
   j <- 4
-  g4 <- data.frame(group = as.character("inauth_gen"), cleaning = x[i, j], netural = y[i, j], alienation = z[i,  j])
+  g4 <- data.frame(group = as.character("inauth_gen"), cleaning = x[i, j], neutral = y[i, j], alienation = z[i,  j])
 
   inauthentic <- rbind(g1, g2, g3, g4)
 

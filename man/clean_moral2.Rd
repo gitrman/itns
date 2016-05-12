@@ -10,6 +10,14 @@
  \item{condition}{Type of words unscrambled: neutral priming or clean priming}
  \item{moral_judgements}{Average of moral judgement scale, 6 items, all ranked from 0-9}
 }}
+\source{
+The dataset is available online at:  \url{https://osf.io/apidb}  and is Study 1 from:
+
+Johnson, D. J., Cheung, F., & Donnellan, M. B. (2014). Does cleanliness influence moral judgments?: A direct replication of Schnall, Benton, and Harvey (2008).
+\emph{Social Psychology, 45}, 209-215. \url{doi:10.1027/1864-9335/a000186}
+
+Note that this a cleaned up version of the online dataset - all participants excluded for various reasons (e.g. experimenter error) have been deleted.
+}
 \usage{
 clean_moral2
 }
@@ -23,18 +31,7 @@ This data comes from a replication of the study described in \code{\link{clean_m
 After publication of that study, Cheung, Donnellan & Johnson (2014) attempted a close replication,
 using the same manipulation and the same measure of moral judgement.
 }
-\section{Source}{
-
-The dataset is available online at:  \url{https://osf.io/apidb}  and is Study 1 from:
-
-Johnson, D. J., Cheung, F., & Donnellan, M. B. (2014). Does cleanliness influence moral judgments?: A direct replication of Schnall, Benton, and Harvey (2008).
-\emph{Social Psychology, 45}, 209-215. \url{doi:10.1027/1864-9335/a000186}
-
-Note that this a cleaned up version of the online dataset - all participants excluded for various reasons (e.g. experimenter error) have been deleted.
-}
-
-\section{References}{
-
+\references{
 Cumming, G., & Calin-Jageman, R. (2017).
  \emph{Introduction to the New Statistics}. New York; Routledge.
 }

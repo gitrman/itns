@@ -11,6 +11,7 @@
  \item{gender}{Gender: Female or Male}
  \item{felt_lucky_1}{First item on manipulation check, rated agreement with statment "Before starting this task, I believed the golf ball assigned to me was lucky" on a scale from 1 to 5.}
  \item{felt_lucky_2}{Second item on manipulation check, rated agreement with statment "Now that I have completed this task, I believe that the golf ball assigned to me is lucky" on a scale from 1 to 5.}
+ \item{felt_lucky_avg}{Average of the two \emph{felt_lucky} items}
  \item{golf_score}{Number of shots made out of 10.}
 }}
 \source{

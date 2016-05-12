@@ -1,23 +1,22 @@
-Package: escir
-Title: Effect Size and Confidence Intervals in R
+Package: itns
+Title: Datasets from the book Introduction to the New Statistics
 Version: 0.0.0.9000
-Date: 2016-03-28
-Authors@R: person("David", "Erceg-Hurn", email = "escir@mailbag.xyz", role=c("aut", "cre"))
+Date: 2016-05-09
+Authors@R: c(
+    person("David", "Erceg-Hurn", email = "gitrman@maibag.xyz", role = c("cre", "aut")),
+    person("Geoff", "Cumming", role = "aut"),
+    person("Robert", "Calin-Jageman", role = "aut")
+    )
 Maintainer: David Erceg-Hurn <gitrman@mailbag.xyz>
-URL: http://www.thenewstatistics.com
-Description: escir makes it easier to compute and plot effect sizes and
-    confidence intervals in R. The effect size indicies include means and mean
-    differences, standardised mean differences (aka 'Cohen's d'), trimmed means,
-    correlation and regression coefficients, frequencies, proportions, and risk
-    ratios. escir was written to accompany the book Introduction to The New
-    Statistics & Open Science (2016) by Geoff Cumming and Robert Calin-Jagerman.
+URL: https://github.com/gitrman/itns, http://www.thenewstatistics.com
+BugReports: https://github.com/gitrman/itns/issues
+Description: The itns package contains almost 40 datasets from psychology studies 
+    used in book Introduction to the New Statistics by Geoff Cumming 
+    and Robert Calin-Jageman, published by Routledge in August 2016. 
+    The datasets can be used to replicate analyses that appear in Introduction to 
+    the New Statistics, and to work through the book's end-of-chapter exercises.
 Depends:
     R (>= 3.1.0)
-Imports:
-    MBESS
-Suggests: knitr,
-    rmarkdown,
-    testthat
 License: GPL-3
 LazyData: TRUE
 VignetteBuilder: knitr

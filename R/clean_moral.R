@@ -47,7 +47,7 @@
 #'  \item{moral_judgements}{Average of moral judgement scale, 6 items, all ranked from 0-9}
 #'}
 #'
-#'@section Source:
+#'@source
 #'The dataset is available online at:  \url{https://osf.io/apidb}  and is Study 1 from:
 #'
 #'Johnson, D. J., Cheung, F., & Donnellan, M. B. (2014). Does cleanliness influence moral judgments?: A direct replication of Schnall, Benton, and Harvey (2008).
@@ -55,7 +55,7 @@
 #'
 #'Note that this a cleaned up version of the online dataset - all participants excluded for various reasons (e.g. experimenter error) have been deleted.
 #'
-#'@section References:
+#'@references
 #'Cumming, G., & Calin-Jageman, R. (2017).
 #'  \emph{Introduction to the New Statistics}. New York; Routledge.
 #'

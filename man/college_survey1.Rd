@@ -24,7 +24,7 @@
  \item{academic_motivation_intrinsic}{Average score on 6-item measure of intrinsic reasons for going to college.}
  \item{academic_motivation_extrinsic}{Average score on 7-item measure of extinsic reasons for going to college.}
  \item{academic_motivation_amotivation}{Average score on 2-item measure of feeling unmotivated about college}
- \item{inteligence_value}{Measure of degree to which participant values intelligence, rated on a scale from 1 (strongly agree) to 5 (strongly agree).}
+ \item{intelligence_value}{Measure of degree to which participant values intelligence, rated on a scale from 1 (strongly agree) to 5 (strongly agree).}
  \item{raven_score}{Percentage correct out of 8 items on the Raven Progressive Matrix Scale, a scale of logical thinking/IQ}.
 }}
 \usage{
