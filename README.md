@@ -13,7 +13,7 @@ The package is currently under development and not intended for use outside of t
 Installation
 ============
 
-`itns` is not currently on CRAN but you can install it from github using the 'devtools' package:
+`itns` is not currently on CRAN but you can install it from github using the `devtools` package:
 
 ``` r
 # install.packages("devtools")
