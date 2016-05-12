@@ -8,7 +8,7 @@ This R package contains datasets from psychology studies used in book [Introduct
 
 The original source of the datasets is a series of Excel files (that will soon be) found on the *Introduction to the New Statistics* website. Those Excel files have been converted to R data frames and bundled together in the `itns` package. The datasets can be used to replicate analyses that appear in *Introduction to the New Statistics*, and to work through the book's end-of-chapter exercises. At present the `itns` package contains all datasets from the book except those used in the meta-analysis chapter. Those will be added at a later date.
 
-The package is currently under development and not intended for use outside of the book's authors and the package developers.
+The package is currently under development and at this stage is not intended for use outside of the book's authors and the package developers.
 
 Installation
 ============
