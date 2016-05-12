@@ -17,6 +17,8 @@ Description: The itns package contains almost 40 datasets from psychology studie
     the New Statistics, and to work through the book's end-of-chapter exercises.
 Depends:
     R (>= 3.1.0)
+Suggests:
+    knitr
 License: GPL-3
 LazyData: TRUE
 VignetteBuilder: knitr
