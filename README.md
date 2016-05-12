@@ -1,26 +1,28 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-This package contains three datasets provided by the USA social security administration:
+itns
+====
 
--   `babynames`: For each year from 1880 to 2013, the number of children of each sex given each name. All names with more than 5 uses are given. (Source: <http://www.ssa.gov/oact/babynames/limits.html>)
+### Datasets for the book *Introduction to the New Statistics*
 
--   `applicants`: The number of applicants for social security numbers (SSN) for each year for each sex. (Source: <http://www.ssa.gov/oact/babynames/numberUSbirths.html>)
+This R package contains datasets from psychology studies used in book [Introduction to the New Statistics](http://www.thenewstatistics.com) by Geoff Cumming and Robert Calin-Jageman, to be published by Routledge in August 2016.
 
--   `lifetables`: Cohort life tables data (Source: <http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html>)
+The original source of the datasets is a series of Excel files (that will soon be) found on the *Introduction to the New Statistics* website. Those Excel files have been converted to R data frames and bundled together in the `itns` package. The datasets can be used to replicate analyses that appear in *Introduction to the New Statistics*, and to work through the book's end-of-chapter exercises. At present the `itns` package contains all datasets from the book except those used in the meta-analysis chapter. Those will be added at a later date.
 
-It also includes the following data set from the US Census:
+The package is currently under development and not intended for use outside of the book's authors and the package developers.
 
--   `births`: Number of live births by year. (Source: <http://www.census.gov/statab/hist/02HS0013.xls> and <http://www.cdc.gov/nchs/data/nvsr/nvsr62/nvsr62_09.pdf>)
+Installation
+============
 
-Install it from github with:
+`itns` is not currently on CRAN but you can install it from github using the 'devtools' package:
 
 ``` r
-devtools::install_github("hadley/babynames")
-#> Downloading GitHub repo hadley/babynames@master
-#> from URL https://api.github.com/repos/hadley/babynames/zipball/master
-#> Installing babynames
-#> "C:/PROGRA~1/R/R-33~1.0/bin/x64/R" --no-site-file --no-environ --no-save  \
-#>   --no-restore --quiet CMD INSTALL  \
-#>   "C:/Users/Lappy-D/AppData/Local/Temp/RtmpYHIbIV/devtools2ff0715b6135/hadley-babynames-c860580"  \
-#>   --library="D:/win-library" --install-tests
-#> 
+# install.packages("devtools")
+# devtools::install_github("gitrman/itns")
 ```
+
+References
+==========
+
+Cumming, G., & Calin-Jageman, R. (2017). *Introduction to the New Statistics*. New York; Routledge.
+
+www.thenewstatistics.com

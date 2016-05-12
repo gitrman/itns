@@ -36,7 +36,7 @@ and the package developers.
 
 ```{r}
 # install.packages("devtools")
-devtools::install_github("gitrman/itns")
+# devtools::install_github("gitrman/itns")
 ```
 
 #References
