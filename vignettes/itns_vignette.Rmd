@@ -14,6 +14,15 @@ Introductory stuff about book here
 [R-Studio Resources for Learning R](https://www.rstudio.com/resources/training/online-learning/#R)
 (with links to interactive tutorials for beginners)
 
+[R for Data Science](http://r4ds.had.co.nz/) - Online book by Garrett Grolemund and Hadley Wickham
+
+[Data Camp have great interactive tutorials]
+(https://www.datacamp.com/)
+
+[Kelly Black's R Tutorial](http://www.cyclismo.org/tutorial/R/index.html)
+
+[R Tutorial Series](https://rtutorialseries.blogspot.com.au/)
+
 [R Bloggers - How to Learn R](http://www.r-bloggers.com/how-to-learn-r-2)
 
 [Quick-R](http://www.statmethods.net)
@@ -22,6 +31,12 @@ Introductory stuff about book here
 
 [R Quick Reference Card](http://cran.r-project.org/doc/contrib/Short-refcard.pdf)
 
+[inside-R](http://www.inside-r.org/)
+
+Maybe effect size and CI stuff should be only thing in vignette, basic stuff like descriptive stats and plots taken out and put into separate file about installing and learning R on the itns website.
+
+## itns package
+Describe how to install it here, say it is a collection of data sets for the book.  In rest of the vignette simply pointing users to useful functions and packages that they can use to do the analyses described in the book.
 
 ## Picturing and Describing Data
 Chapter 3 of ITNS.
@@ -34,29 +49,57 @@ For one, and two samples (side by side)
 Descriptive Statistics
 Mean, median, SD, quartiles, IQR, range, percentiles, z-scores
 
-*Basic Descriptive Statistisc Functions*
+
+### Basic Descriptive Statistics
+
+All built into R.
 
 Statistics          | Function
----------------------------------------
-Mean                | mean()
-Median              | median()
-Minimum             | min()
-Maximum             | max()
-Standard Deviation  | sd()
-Interquartile Range | IQR()
-Range               | range()
-Percentile          | quantile()
+------------------- | -------------
+Mean                | [mean()](http://www.inside-r.org/r-doc/base/mean)
+Median              | [median()](http://www.inside-r.org/r-doc/stats/median)
+Minimum             | [min()](http://www.inside-r.org/r-doc/base/Extremes)
+Maximum             | [max()](http://www.inside-r.org/r-doc/base/Extremes)
+Variance            | [var()](http://www.inside-r.org/r-doc/stats/cor)
+Standard Deviation  | [sd()](http://www.inside-r.org/r-doc/stats/sd)
+Interquartile Range | [IQR()](http://www.inside-r.org/r-doc/stats/IQR)
+Range               | [range()](http://www.inside-r.org/r-doc/base/range)
+Percentile          | [quantile()](http://www.inside-r.org/r-doc/stats/quantile)
 
-summary()
+[summary()](https://stat.ethz.ch/R-manual/R-devel/library/base/html/summary.html)
+
+**Useful tutorials**
+*[John Quirk's Summary and Descriptive Statistics](https://rtutorialseries.blogspot.com.au/2009/11/r-tutorial-series-summary-and.html)
+
+
+#### Multiple groups
+There are many ways to do this.  We recommend using dplyr package:
+
+dplyr [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html), see the section on *Grouped Operations* using the group_by() and summarise() functions
+
+Give an example of computing mean and standard deviation.
+
+Other options include using the inbuilt R function [aggregate()](http://www.inside-r.org/r-doc/stats/aggregate) or the [doBy package](https://cran.r-project.org/web/packages/doBy/vignettes/doBy.pdf).
+
+
+### Z-Scores
+[John Quick's tutorial](http://www.r-bloggers.com/r-tutorial-series-centering-variables-and-generating-z-scores-with-the-scale-function) shows how to use R's inbuilt scale() function to compute Z-scores.  See also [Seam Dolinar's
+tutorial](http://stats.seandolinar.com/calculating-z-scores-with-r/) on Calculating Z scores and finding tail probabilities.
+
+## Plots
+Three graphics systems - base graphics, lattice, and ggplot2.
+
+For new users, would recommend learning ggplot2 first as it is the most flexible.
+
+Deducer has an excellent GUI for ggplot2 that makes it easier to create plots.
+
+
+Histogram
+
+Dotplot
 
 
 
-
-
-## The Normal Distribution and Sampling
-
-Find tail areas for X or Z values
-Find X given z
 
 ## Confidence Intervals and Effect Sizes
 
@@ -66,25 +109,81 @@ Find critical value of t given df and a tail probability
 
 Calculate MOE and 95% CI on a mean for single sample, usuing Z or t
 
+## The Normal Distribution and Sampling
+Find tail areas for X or Z values
+Find X given z
+
 ## p Values, Null Hypothesis Significance Testing, and Confidence Intervals
 
 Calculate p values gor single samples, using z or t
 
-## Independent Groups Design
+[Kelly Black's tutorial](http://www.cyclismo.org/tutorial/R/pValues.html) shows how to compute p values using z- or t-distributions.
+
+[Kelly Black's tutorial](http://www.cyclismo.org/tutorial/R/confidence.html)  shows how to calculate confidence intervals for means using normal or t-distributions.
+
+The easiest way to compute confidence intervals and p values is using the t.test() function.
+
+ggplot showing CI on a mean?
+
+## t.test() function
+The t.test() function is built into R.  It produces confidence intervals and p-values for single samples, two independent groups, and paired samples.
+
+Give examples using itns data.
+
+t.test(x, y, conf.level=ci, var.equal = TRUE)
+t.test(x, y, conf.level=ci, var.equal = FALSE)
+t.test(x, y, paired = TRUE)
+
+## MBESS package
+library(MBESS)
+Ken Kelly's [MBESS (Methods for the Behavioural and Social Sciences)](https://www3.nd.edu/~kkelley/site/MBESS.html) package.
+
+Includes functions for computing confidence intervals around the standardised mean difference, unstandardised and standardised regression coefficients, reliability coefficents, ANOVA contrasts, R-squared, and more.  Also includes functions for power analysis and sample size planning.
+
+Demonstrate some key functions related to book.
+
 CI on difference between means
 Cohen's d
 
-## The Paired Design
+Effect Sizes and Confidence Intervals
+Sample Size and Parameter Estimation Sample Size Planning
+
+Any precision for planning functions
+Any statistical power functions
+
+## WRS and WRS2 packages
+
+
+
+## Standardized Paired Difference
+Is there any function for this?
+Or show how to compute by hand and use noncentral T from MBESs
 CI on mean difference
 d using SD-average (of pre and post) as standardizer
 
 
 ## Meta-Analysis
+There are numerous R packages that can be used to conduct meta-analyses for a wide variety of effect sizes such as means, mean differences, standardized mean differences, proportions, odds rations, etc. See the [CRAN Meta-Analysis Task View](https://cran.r-project.org/web/views/MetaAnalysis.html) for a comprehensive list of them.
+
+A popular and well documented package for conducting meta-analyses in R is [metafor](http://www.metafor-project.org).  See the comprehensive [metafor website](http://www.metafor-project.org) for more information.
+
+[metagear](http://lajeunesse.myweb.usf.edu/publications.html) 
+is a relatively new package which has meta-analytic capabilities as well as functions that help users conduct systematic reviews  and generate [PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses)](http://www.prisma-statement.org/) flow charts.  [This vignette](http://lajeunesse.myweb.usf.edu/metagear/metagear_basic_vignette.html) provides an overview of the metagrear package.
+
+Other useful sources of information about conducting meta-analyses in R include:  
+  * [A.C Del Re's Practical Tutorial](http://www.tqmp.org/RegularArticles/vol11-1/p037/p037.pdf) on Conducting Meta-Analysis in R using the metafor and MAd packages
+  * Stephanie Kovalchik's [Tutorial on Meta-Analysis in R](http://www.edii.uclm.es/~useR-2013/Tutorials/kovalchik/kovalchik_meta_tutorial.pdf) from the 2013 useR! Conference
+  * Schwarzer, Carpenter, and Rucker's [Meta-Analysis with R](https://link.springer.com/book/10.1007/978-3-319-21416-0) book
+  * [R-Studio's tutorial](https://rstudio-pubs-static.s3.amazonaws.com/10913_5858762ec84b458d89b0f4a4e6dd5e81.html) on running meta-analyses in R using the metafor package
+  * Simon Knight's Guide to Meta-Analysis in R - [part 1](http://www.transplantevidence.com/blog/2014/07/meta-analysis-in-r-part-1-installing-the-software/) and [part 2](http://www.transplantevidence.com/blog/2014/08/meta-analysis-in-r-part-2-binary-data/.
+  * Stephanie Hick's [Easy Introduction to Meta-Analysis in R](https://statisticalrecipes.blogspot.com.au/2014/01/easy-introduction-to-meta-analyses-in-r.html) using the meta package 
+
 
 ## Open Science and Planning Research
 
-Any precision for planning functions
-Any statistical power functions
+
+
+MBESs does this
 
 ## Correlation
 Basic scatterplot
@@ -95,9 +194,22 @@ CI on difference between two independent correlations
 Figure to display difference in two ind corr
 
 ## Regression
-Calculationa nd figure for regression line in scatterplot
+Calculation and figure for regression line in scatterplot
 
 CI on the regression slope
+
+lm() is the inbuilt R function for ordinary least-squares regression.
+confint() gives confidence intervals on regression parameters
+
+Also MBESS can do this (apaprently) as well as for standardized coefficients.
+
+Link to graphics.
+
+Show ggplot2 scatterplot with OLS line, maybe also show smoother, mention it can also fit robust and other regression lines.
+
+car book and package by John Fox goes further
+rms strategies book
+Also countless other packages for fitting a variety of regression models in R.
 
 Prediction intervals for individual values of Y at particular X values
 
