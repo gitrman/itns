@@ -1,7 +1,7 @@
 Package: itns
 Title: Datasets from the book Introduction to the New Statistics
 Version: 0.0.0.9000
-Date: 2016-05-12
+Date: 2016-05-16
 Authors@R: c(
     person("David", "Erceg-Hurn", email = "gitrman@maibag.xyz", role = c("cre", "aut")),
     person("Geoff", "Cumming", role = "aut"),
@@ -20,3 +20,6 @@ Depends:
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
