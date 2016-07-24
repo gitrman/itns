@@ -1,5 +1,5 @@
 ---
-title: "Effect Size and Confidence Intervals in R - Helpful Tips"
+title: "Getting Started with Effect Size and Confidence Intervals in R"
 author: "David Erceg-Hurn, Geoff Cumming, Robert Calin-Jageman"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -34,6 +34,15 @@ Introductory stuff about book here
 [inside-R](http://www.inside-r.org/)
 
 Maybe effect size and CI stuff should be only thing in vignette, basic stuff like descriptive stats and plots taken out and put into separate file about installing and learning R on the itns website.
+
+
+http://moc.environmentalinformatics-marburg.de/gitbooks/publicationQualityGraphics/_book/index.html  says:
+google is your friend - for R related questions just type something like this 'r lattice how to change plot background color' The crux here is that you provide both the programming language - R - and the name of the package your question is related to - lattice. This way you will very likely find useful answers (the web is full of knowledgeable geeks)
+for quick reference on the most useful basic functionality of R use http://www.statmethods.net
+using google in the way outlined above, you will most likely end up at Stackoverflow at some stage. This is a very helpful platform for all sorts of programming issues with an ever increasing contribution of the R community. To search directly at Stackoverflow for R related stuff, type 'r' in front of you search.
+Rseek is a search site dedicated exclusively to R-related stuff.
+R-Bloggers is a nice site that provides access to all sorts of blog sites dedicated to R from all around the world (in fact, a lot of the material of this workshop is derived from posts found there).
+
 
 ## itns package
 Describe how to install it here, say it is a collection of data sets for the book.  In rest of the vignette simply pointing users to useful functions and packages that they can use to do the analyses described in the book.
@@ -93,6 +102,13 @@ For new users, would recommend learning ggplot2 first as it is the most flexible
 
 Deducer has an excellent GUI for ggplot2 that makes it easier to create plots.
 
+[This tutoral](http://personal.colby.edu/personal/m/mgimond/RIntro/05_Plotting_systems.html) provides an overview of the three systems with examples.
+
+Tim Appelhans has a [comprehensive tutorial](http://moc.environmentalinformatics-marburg.de/gitbooks/publicationQualityGraphics/_book/chapters/02_data_visualisation/scatter_lattice.html) about creating publication quality graphics using lattice and ggplot2 systems.
+
+he also notes that
+"google is your friend - for R related questions just type something like this 'r lattice how to change plot background color' The crux here is that you provide both the programming language - R - and the name of the package your question is related to - lattice. This way you will very likely find useful answers (the web is full of knowledgeable geeks)""
+
 
 Histogram
 
@@ -100,6 +116,26 @@ Dotplot
 
 
 
+Best place to start is probably the [Getting Started with Lattice Graphics](http://lattice.r-forge.r-project.org/Vignettes/src/lattice-intro/lattice-intro.pdf) tutorial by Deepayan Sarkar.
+
+His [Lattice book](https://www.springer.com/gp/book/9780387759685) provides more comprehensive information.
+
+
+[ggplot2 book website](http://ggplot2.org/book/)
+[ggplot2 online documentation](http://docs.ggplot2.org/current/index.html)
+
+[Winston Chang's R Graphic's Cookbook](http://www.cookbook-r.com/Graphs)
+
+[Harvard Introduction to ggplot2](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
+
+[Zevross ggplot2 tutoial](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
+
+[ggplot2 tutorial](https://github.com/jennybc/ggplot2-tutorial)
+
+DataCamp online courses (cost money)
+https://www.datacamp.com/courses/data-visualization-with-ggplot2-1
+
+[RStudio ggplot2 cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 
 ## Confidence Intervals and Effect Sizes
 
@@ -171,17 +207,21 @@ A popular and well documented package for conducting meta-analyses in R is [meta
 is a relatively new package which has meta-analytic capabilities as well as functions that help users conduct systematic reviews  and generate [PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses)](http://www.prisma-statement.org/) flow charts.  [This vignette](http://lajeunesse.myweb.usf.edu/metagear/metagear_basic_vignette.html) provides an overview of the metagrear package.
 
 Other useful sources of information about conducting meta-analyses in R include:  
-  * [A.C Del Re's Practical Tutorial](http://www.tqmp.org/RegularArticles/vol11-1/p037/p037.pdf) on Conducting Meta-Analysis in R using the metafor and MAd packages
-  * Stephanie Kovalchik's [Tutorial on Meta-Analysis in R](http://www.edii.uclm.es/~useR-2013/Tutorials/kovalchik/kovalchik_meta_tutorial.pdf) from the 2013 useR! Conference
-  * Schwarzer, Carpenter, and Rucker's [Meta-Analysis with R](https://link.springer.com/book/10.1007/978-3-319-21416-0) book
-  * [R-Studio's tutorial](https://rstudio-pubs-static.s3.amazonaws.com/10913_5858762ec84b458d89b0f4a4e6dd5e81.html) on running meta-analyses in R using the metafor package
-  * Simon Knight's Guide to Meta-Analysis in R - [part 1](http://www.transplantevidence.com/blog/2014/07/meta-analysis-in-r-part-1-installing-the-software/) and [part 2](http://www.transplantevidence.com/blog/2014/08/meta-analysis-in-r-part-2-binary-data/.
-  * Stephanie Hick's [Easy Introduction to Meta-Analysis in R](https://statisticalrecipes.blogspot.com.au/2014/01/easy-introduction-to-meta-analyses-in-r.html) using the meta package 
+* [A.C Del Re's Practical Tutorial](http://www.tqmp.org/RegularArticles/vol11-1/p037/p037.pdf) on Conducting Meta-Analysis in R using the metafor and MAd packages
+* Stephanie Kovalchik's [Tutorial on Meta-Analysis in R](http://www.edii.uclm.es/~useR-2013/Tutorials/kovalchik/kovalchik_meta_tutorial.pdf) from the 2013 useR! Conference
+* Schwarzer, Carpenter, and Rucker's [Meta-Analysis with R](https://link.springer.com/book/10.1007/978-3-319-21416-0) book
+* [R-Studio's tutorial](https://rstudio-pubs-static.s3.amazonaws.com/10913_5858762ec84b458d89b0f4a4e6dd5e81.html) on running meta-analyses in R using the metafor package
+* Simon Knight's Guide to Meta-Analysis in R - [part 1](http://www.transplantevidence.com/blog/2014/07/meta-analysis-in-r-part-1-installing-the-software/) and [part 2](http://www.transplantevidence.com/blog/2014/08/meta-analysis-in-r-part-2-binary-data).
+* Stephanie Hick's [Easy Introduction to Meta-Analysis in R](https://statisticalrecipes.blogspot.com.au/2014/01/easy-introduction-to-meta-analyses-in-r.html) using the meta package 
+
+
+## multicon plots
+egraph() - A function for plotting means as dots and error bars without caps around them
+catseye() - A function for creating cat's eye plots of group means
+diffPlot() - A function for creating difference plots for two group (both paired and independent) comparisons
 
 
 ## Open Science and Planning Research
-
-
 
 MBESs does this
 
@@ -207,8 +247,6 @@ Link to graphics.
 
 Show ggplot2 scatterplot with OLS line, maybe also show smoother, mention it can also fit robust and other regression lines.
 
-car book and package by John Fox goes further
-rms strategies book
 Also countless other packages for fitting a variety of regression models in R.
 
 Prediction intervals for individual values of Y at particular X values
@@ -225,6 +263,19 @@ ESCI uses Newcombe 1998 methods
 Ratio between two variables - frequency tables
 CI on the difference
 Chi Square / Phi Coefficients
+
+vcd and vcdExtra packages for visualising categorical data
+
+PropCIs
+Does CIs for single, independent, and paired proportions.
+Includes risk score CI.
+
+library(pairwiseCI)	# for ARR NHS and RR using Score Method.  Uses Prop.diff and Prop.ratio	
+
+And chi-square function I used for recent WCBCT analyses.
+
+R manual to accompany Agresti's Categorical Data Analysis 2nd Ed by Laura Thompson
+http://www.stat.ufl.edu/~aa/cda/Thompson_manual.pdf
 
 ## Extended Designs - One Independent Variable
 One way independent groups design
