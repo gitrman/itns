@@ -471,3 +471,22 @@
   devtools::use_data(blame2, overwrite = TRUE)
   rm(x, y, z, zz, df)
   devtools::use_data(blame2, overwrite = TRUE)
+
+  
+## Add Ch 6 Sleep Deprivation Data
+  # Source = https://www.statcrunch.com/app/index.php?dataid=1053539
+  stickgold <- data.frame(sleep = factor(rep("deprived", 11)), 
+                          improvement = c(  -14.7,
+                                            -10.7,
+                                            -10.7,
+                                            2.2,
+                                            2.4,
+                                            4.5,
+                                            7.2,
+                                            9.6,
+                                            10,
+                                            21.3,
+                                            21.8)
+            )
+  devtools::use_data(stickgold, overwrite = TRUE)
+  
