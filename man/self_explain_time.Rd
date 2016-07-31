@@ -21,7 +21,7 @@ additional practice. \emph{The British Journal of Educational Psychology, 83}, 6
 self_explain_time
 }
 \description{
-An example dataset used in Chapter 14 of the book 
+An example dataset used in Chapter 15 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

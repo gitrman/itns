@@ -1,6 +1,6 @@
 #'One Way Design - IQ Boosting Drugs
 #'
-#'An example dataset used in Chapter 13 of the book 
+#'An example dataset used in Chapter 14 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'This is a fake dataset created for the purposes of teaching / illustration.

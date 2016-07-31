@@ -1,7 +1,7 @@
 ---
-title: "Getting Started with Effect Sizes and Confidence Intervals in R"
+title: "Getting Started with the New Statistics in R"
 author: "David Erceg-Hurn, Geoff Cumming, Robert Calin-Jageman"
-date: "24 July 2016"
+date: "`r Sys.Date()`"
 output: 
   pdf_document:
     latex_engine: xelatex
@@ -12,11 +12,9 @@ urlcolor: blue
 # Overview
 [R](https://www.r-project.org/) is a popular and powerful free program that can be used to conduct most of the statistical analyses outlined in *Introduction to the New Statistics*.  Unlike programs such as SPSS where analyses are usually conducted by clicking on menus, in R analyses are typically performed by typing *commands*.
 
-This document is not a comprehensive guide to using R.  Rather, it contains some tips and pointers to websites and other resources that will help you learn how to use R to compute effect sizes and confidence intervals.
+This document is a brief guide that will help you to get started using the 'new statistics' in R.  The guide is split into three sections.  The first section provides some tips about installing and learning the basics of R.  If you've never used R before you should read this section - if you already know how to use R you can skip it. The second section provides a brief overview of a new R package, [itns](https://github.com/gitrman/itns), that contains the datasets used in *Introduction to the New Statistics*.  You can use the datasets in the *itns* package to work through the examples covered in the book and the end-of-chapter exercises.  The final section provides a brief overview of R packages and functions that can be used to conduct the analyses covered in *Introdudction to the New Statistics*.
 
 You will notice that some words in this document are a blue colour.  These are hyperlinks.  If you click on the blue text, you will be redirected to websites that contain information about using R.
-
-This guide is split into three sections.  The first section provides some tips about installing and learning the basics of R.  If you've never used R before you should read this section - if you already know how to use R you can skip it. The second section provides a brief overview of a new R package, [itns](https://github.com/gitrman/itns), that contains most of the datasets used in *Introduction to the New Statistics*.  You can use the datasets in the *itns* package to work through the examples covered in the book and the end-of-chapter exercises.  The final section provides a brief overview of R packages and functions that can be used to conduct the analyses covered in *Introdudction to the New Statistics*.
 
 # Part One - Installing R and Learning the Basics
 
@@ -35,7 +33,7 @@ In the remainder of the document, we assume that you have a basic understanding 
 
 # Part Two - The *itns* Dataset Package
 
-[itns](https://github.com/gitrman/itns) is an R package which contains most of the datasets used in *Introduction to the New Statistics*.  The datasets were converted from Microsoft Excel files (found on the book's website) into R data frames.  The *itns* package can be downloaded from github using the `devtools` package:
+'[itns](https://github.com/gitrman/itns)' is an R package which contains most of the datasets used in *Introduction to the New Statistics*.  The datasets were converted from Microsoft Excel files (found on the book's website) into R data frames.  The *itns* package is not yet on CRAN, but can be downloaded from github using the `devtools` package:
 
 ```{r eval=FALSE}
  # install.packages("devtools")
@@ -43,78 +41,56 @@ In the remainder of the document, we assume that you have a basic understanding 
  install_github("gitrman/itns")
 ```
 
-You will then then able to load the package and access the datasets.  For example, we can explore the Pen and Laptop study data mentioned in Chapter 2 and 7 of the book the `str()` and `head()` functions:
+The table below contains a list of names of the datasets in the package, and the sections of the book where they are mentioned:
+
+**`itns` Package Data Frames**
+
+Name         |Section                |Topic 
+-------------|-----------------------|---------------------------------
+college_survey1     |Ch 3 End of Chapter Exercises 2 & 3 |Descriptive Statistics & Plots
+religious_belief    |Ch 3 End of Chapter Exercise 4 |Descripitive Statistics & Plots
+college_survey1     |Ch 5 End of Chapter Exercises 2 & 3 |Single Sample Confidence Interval
+college_survey2     |Ch 5 End of Chapter Excercise 4 |Single Sample Confidence Interval
+stickgold           |Ch 6 End of Chapter Exercise 5 |Single Sample Confidence Interval
+pen_laptop1         |Ch 7.6-7.12 |Two Independent Groups
+pen_laptop2         |Ch 7.36-7.38 |Two Independent Groups
+anchor_estimate     |Ch 7 End of Chapter Exercise 3 |Two Independent Groups
+clean_moral1        |Ch 7 End of Chapter Exercise 4 |Two Independent Groups
+clean_moral2        |Ch 7 End of Chapter Exercise 4 |Two Independent Groups
+math_gender_iat     |Ch 7 End of Chapter Exercise 5 |Two Independent Groups
+thomason1           |Ch 8, 11, 12    |Two Dependent Groups, Scatterplots, Regression
+thomason2           |Ch 8            |Two Dependent Groups
+thomason3           |Ch 8, 12.18     |Two Dependent Groups, Regression
+emotion_hartrate    |Ch 8 End of Chapter Exercise 3 |Two Dependent Groups
+labels_flavor       |Ch 8 End of Chapter Exercise 4 |Two Dependent Groups
+ma_anchor_adjust    |Ch9 End of Chapter Exercise 1  | Meta-Analysis
+ma_flag_priming     |Ch9 End of Chapter Exercise 2  | Meta-Analysis
+ma_math_gender_iat  |Ch9 End of Chapter Exercise 3  | Meta-Analysis
+ma_power_performance|Ch9 End of Chapter Exercise 4  | Meta-Analysis
+body_well           |Ch 11, 12       |Correlation, Regression
+exam_scores         |Ch 11 End of Chapter Exericse 2 | Correlation
+sleep_beauty        |Ch 11 End of Chapter Exericse 6 | Correlation
+campus_involvement  |Ch 11 End of Chapter Exericse 7 | Correlation
+home_prices         |Ch 12 End of Chapter Exercise 2 |Regression
+home_prices_holdout |Ch 12 End of Chapter Excerise 2h |Regression
+altruism_happiness  |Ch 12 End of Chapter Exercise 3 |Regression
+rattan              |Ch 14.10-14.12    |One-Way Independent Group Contrasts and Comparisons
+organic_moral       |Ch 14 End of Chapter Exercise 5          |One-Way Independent Group Contrasts and Comparisons
+videogame_aggression|Ch 15 End of Chapter Exercise 3          |Analysing factorial designs
+self_explain_time   |Ch 15 End of Chapter Exercise 4         |Analysing factorial designs
+natsal              |Ch 16.11          |Robust Methods - Two Independent Groups
+dana                |Ch 16 End of Chapter Exercise 3           |Robust Methods - Two Independent Groups
+
+
+Once you have installed the package, you can use the `library()` function to load it, `str()` to examine metadata for each data frame, and functions such as `head()` and `tail()` to print the first or last few rows to your screen. 
 
 
 ```{r eval}
- library(itns)
+ library(itns)     # loads the package
  str(pen_laptop1)  # displays metadata
  head(pen_laptop1) # prints the first few rows
+ tail(pen_laptop1) # prints the last few rows
 ```
-
-Here is a list of the datasets in the package:
-
-**TABLE TO GO HERE**
-
-
-Name is the name of the dataset
-Chapter is the chapter in the book the dataset is covered
-Notes mention the type of design or analysis the dataset is used to illustrate in the book
-
-Maybe also note if in text or end of chapter exercise.
-If we have a proof we can specify the page numbers
-switch order to same order as in book
-
-DO WE NEED TO ADD MENTION OF PLOTTING?
-
-
-Name                |Chapter      |Notes
---------------------|-------------|---------------------------------
-college_survey1     |3            |End of Chapter Exercise 2 & 3 - Descriptive Statistics
-religious_belief    |3            |End of Chapter Exercise 4 -  Descripitive Statistics
-college_survey1     |5            |End of Chapter Exercise 2 & 3 - Confidence Interval for a Mean
-college_survey2     |5            |End of Chapter Excercise 4 - Replication, Confidence Interval for a Mean
-stickgold           |6            |End of Chapter Exercise 5 - Confidence Interval for a Mean
-pen_laptop1         |7            |Two Independent Groups
-pen_laptop2         |7            |Two Independent Groups
-flag_priming        |7            |Two Independent Groups
-anchor_estimate     |7            |Two Independent Groups
-clean_moral1        |7            |Two Independent Groups
-clean_moral2        |7            |Two Independent Groups
-math_gender_iat     |7            |Two Independent Groups
-super_golf          |7            |Two Independent Groups
-thomason1           |8            |Two Dependent Groups
-thomason2           |8            |Two Dependent Groups
-thomason3           |8            |Two Dependent Groups
-emotion_hartrate    |8            |Two Dependent Groups
-habituation         |8            |Two Dependent Groups
-labels_flavor       |8            |Two Dependent Groups
-learning_genes      |8            |Two Dependent Groups
-sensitization       |8            |Two Dependent Groups
-body_well           |11           |Correlation
-exam_scores         |11           |Correlation
-campus_involvement  |11           |Correlation
-sleep_beauty        |11           |Correlation
-ch11_ex7            |11           |Correlation
-altruism_happiness  |12           |Regression
-home_prices         |12           |Regression
-home_prices_holdout |12           |Regression
-ch12_ex3            |12           |Regression
-organic_moral       |13           |Extended Designs: One-Way
-inauthentic         |13           |Extended Designs: One-Way
-iqboost             |13           |Extended Designs: One-Way
-blame1              |14           |Extended Designs: Two-Way
-blame2              |14           |Extended Designs: Two-Way
-videogame_aggression|14           |Extended Designs: Two-Way
-self_explain_time   |14           |Extended Designs: ???  **CHECK**
-natsal              |16           |Robust Methods
-dana                |16           |Robust Methods
-
-Is there anything for proportions??????
-
-**ch6 end of chapter ex 5 stickgold dataset - where is this?  I don't have any data/ESCI files for Ch 6.**
-
-?data
 
 
 To access further details about each dataset, type a question mark and the name of the dataset, for example:
@@ -124,29 +100,21 @@ To access further details about each dataset, type a question mark and the name 
 
 or access the PDF help file **LINK TO GO HERE** on github.
 
-The datasets can be used to replicate analyses that appear in *Introduction to the New Statistics*, and to work through the book's end-of-chapter exercises. 
+The datasets in the `itns` package can be used to replicate analyses that appear in *Introduction to the New Statistics*, and to work through the book's end-of-chapter exercises using the packages and functions outlined in the next section of this guide.
 
 # Part 3 - Helpful Packages and Functions
 
-Describe how to install it here, say it is a collection of data sets for the book.  In rest of the vignette simply pointing users to useful functions and packages that they can use to do the analyses described in the book.
-
-## Picturing and Describing Data
-Chapter 3 of ITNS.
-
-Frequency Histogram
-Stacked Dot Plot
-
-For one, and two samples (side by side)
-
-Descriptive Statistics
-Mean, median, SD, quartiles, IQR, range, percentiles, z-scores
+Most of the analyses described in *Introduction to the New Statistics* can be conducted using inbuilt R functions, or functions in packages that 
+can be downloaded from CRAN or github.  In this section we mention some useful functions, packages, and resources that will help you learn how to use them.
 
 
 ### Basic Descriptive Statistics
 
-All built into R.
+Functions to compute basic descriptive statistics are built into R.  Some of these are listed in the table below:
 
-Statistics          | Function
+**Functions For Computing Descriptive Statistics**
+
+Statistic           | Function
 ------------------- | -------------
 Mean                | [mean()](http://www.inside-r.org/r-doc/base/mean)
 Median              | [median()](http://www.inside-r.org/r-doc/stats/median)
@@ -164,7 +132,7 @@ Percentile          | [quantile()](http://www.inside-r.org/r-doc/stats/quantile)
 *[John Quirk's Summary and Descriptive Statistics](https://rtutorialseries.blogspot.com.au/2009/11/r-tutorial-series-summary-and.html)
 
 
-#### Multiple groups
+#### Computing Descriptive Statistics For Multiple groups
 There are many ways to do this.  We recommend using dplyr package:
 
 dplyr [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html), see the section on *Grouped Operations* using the group_by() and summarise() functions
@@ -432,3 +400,28 @@ Also a quote using `>`:
 
 > "He who gives up [code] safety for [code] speed deserves neither."
 ([via](https://twitter.com/hadleywickham/status/504368538874703872))
+
+
+
+
+
+# Questions for Geoff and Bob
+
+*Datasets I can't find referenced in text*
+
+Name           |Section                  
+---------------|-------------------------
+flag_priming        |Ch 7 ???
+super_golf          |Ch 7 ???
+habituation         |Ch 8 ??? 
+learning_genes      |Ch 8 ???
+sensitization       |Ch 8 ???
+ma_gambler_fallacy  |Ch9 ???
+ma_anchor_adjust_chicago |Ch9 ???
+ma_anchor_adjust_everest |Ch9 ???
+ch11_ex7            |Ch 11 ???
+ch12_ex3            |Ch 12 ???
+inauthentic         |Ch 14 ???
+iqboost             |Ch 14 ???
+blame1              |Ch 15 ???
+blame2              |Ch 15 ???

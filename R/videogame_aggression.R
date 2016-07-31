@@ -1,6 +1,6 @@
 #'Two Way Design - Video game Aggression
 #'
-#'An example dataset used in Chapter 14 of the book 
+#'An example dataset used in Chapter 15 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'Hilgard (2015) asked male participants to play a video game for 15 minutes.  The game was customized

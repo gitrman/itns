@@ -23,7 +23,7 @@ The data has been reshaped into a format that is easy to analyse in R.
 inauthentic
 }
 \description{
-An example dataset used in Chapter 13 of the book 
+An example dataset used in Chapter 14 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

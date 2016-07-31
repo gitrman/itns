@@ -1,6 +1,6 @@
 #'Two Way Design - Blame 1
 #'
-#'An example dataset used in Chapter 14 of the book 
+#'An example dataset used in Chapter 15 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'Gilbert, Guinn, and Reppucci (2015) conducted a series of online studies to explore how participants assign blame
@@ -33,7 +33,7 @@
 
 #'Two Way Design - Blame 2
 #'
-#'An example dataset used in Chapter 14 of the book 
+#'An example dataset used in Chapter 15 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'The data here is from a study that was a direct replication of that described in \code{\link{blame1}}.

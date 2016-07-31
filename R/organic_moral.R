@@ -1,6 +1,6 @@
 #'One Way Design - Organic Foods and Moral Judgements
 #'
-#'An example dataset used in Chapter 13 of the book 
+#'An example dataset used in Chapter 14 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'Do organic foods make us morally smug?  To what extent?  To find out, Eskine (2013) asked

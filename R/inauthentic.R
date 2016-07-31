@@ -1,6 +1,6 @@
 #'One Way Design - Inauthenticity
 #'
-#'An example dataset used in Chapter 13 of the book 
+#'An example dataset used in Chapter 14 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'"To thine own self be true" is the advice of Polonious in Hamlet.  What happens, though, when we act contrary

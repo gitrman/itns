@@ -490,3 +490,20 @@
             )
   devtools::use_data(stickgold, overwrite = TRUE)
   
+## Add Ch 14 Rattan Data
+  options(java.parameters = "-Xmx4096m") # to avoid memory errors when loading Excel worksheets
+  library(XLConnect)
+  
+  df <- readWorksheet(loadWorkbook('data-raw/ESCI intro chapters 10-16 beta Jan 9 2016.xlsm'), sheet = "Ind groups comparisons", region = 'AY8:BA26')
+  x <- na.omit(df[,1])
+  y <- na.omit(df[,2])
+  z <- na.omit(df[,3])
+  df <- data.frame(group = rep(c("comfort", "challng", "control"), c(length(x), length(y), length(z))),
+                   motivation = c(x, y, z)
+  )
+  rattan <- df
+  rattan$group <- factor(rattan$group)
+  devtools::use_data(rattan, overwrite = TRUE)
+  rm(x, y, z, df)
+  
+  

@@ -13,7 +13,7 @@
 iq_boost
 }
 \description{
-An example dataset used in Chapter 13 of the book 
+An example dataset used in Chapter 14 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

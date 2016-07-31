@@ -24,7 +24,7 @@ Eskine, K. J. (2013). Wholesome Foods and Wholesome Morals?: Organic Foods Reduc
 organic_moral
 }
 \description{
-An example dataset used in Chapter 13 of the book 
+An example dataset used in Chapter 14 of the book 
 \emph{Introduction to the New Statistics}.
 }
 \details{

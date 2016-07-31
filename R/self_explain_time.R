@@ -1,6 +1,6 @@
 #'Two Way Design - Self Explain Time
 #'
-#'An example dataset used in Chapter 14 of the book 
+#'An example dataset used in Chapter 15 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
 #'Self-explaining is a study strategy where students explain material to themselves as they learn.
