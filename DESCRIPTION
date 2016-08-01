@@ -17,10 +17,10 @@ Description: The itns package contains numerous datasets from psychology studies
     the New Statistics, and to work through the book's end-of-chapter exercises.  
     Also included is a function to compute Cohen's d for repeated measures designs.
 Depends:
-    R (>= 3.1.0)
-Imports:
-    MBESS (>= 4.0.0),
+    R (>= 3.1.0), 
     stats
+Imports:
+    MBESS (>= 4.0.0)
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1
