@@ -10,7 +10,7 @@
 #'
 #'@format A data frame with 21 rows and 2 variables:
 #'\describe{
-#'  \item{sleep}{Factor with one level: \emph{deprived}
+#'  \item{sleep}{Factor with one level: \emph{deprived}}
 #'  \item{Improvement}{Changes in learning score}
 #'}
 #'

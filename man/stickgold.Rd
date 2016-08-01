@@ -4,7 +4,11 @@
 \name{stickgold}
 \alias{stickgold}
 \title{Single Group - Stickgold Sleep Deprivation Study}
-\format{An object of class \code{data.frame} with 11 rows and 2 columns.}
+\format{A data frame with 21 rows and 2 variables:
+\describe{
+ \item{sleep}{Factor with one level: \emph{deprived}}
+ \item{improvement}{Changes in learning score}
+}}
 \source{
 This is a subset of a dataset is available online \url{https://www.statcrunch.com/app/index.php?dataid=1053539}
 }
