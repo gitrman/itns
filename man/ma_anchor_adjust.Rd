@@ -11,7 +11,7 @@
  \item{sd_lowanchor}{Standard deviation for those given the low anchor}
  \item{n_lowanchor}{Sample size for those given the low anchor}
  \item{m_highanchor}{Mean for those given the high anchor}
- \item{sd_highanchor}{Standard Deviation for those given the high anchor}
+ \item{sd_highanchor}{Standard deviation for those given the high anchor}
  \item{n_highanchor}{Sample size for those given the high anchor}
  \item{subset}{Factor indicating whether the study was conducted in the USA or not}
  \item{country}{Factor with 12 levels indicating the country where the study was conducted}
