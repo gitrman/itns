@@ -1,4 +1,4 @@
-#'Cohen's d standardized mean change effect size for repated measures designs
+#'Cohen's d standardized mean change effect size for repeated measures designs
 #'
 #'Computes Cohen's d effect size for repeated measures designs (paired samples),
 #'using the standardizer recommended by Cumming (2012).  In other words, the 
