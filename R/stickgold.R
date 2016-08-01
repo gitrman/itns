@@ -20,4 +20,4 @@
 #'@references
 #'Cumming, G., & Calin-Jageman, R. (2017).
 #'  \emph{Introduction to the New Statistics}. New York; Routledge.
-
+"stickgold"

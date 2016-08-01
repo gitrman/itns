@@ -5,6 +5,8 @@ date: "`r Sys.Date()`"
 output: 
   pdf_document:
     latex_engine: xelatex
+    fig_width: 6
+    fig_height: 4.5
 mainfont: "Arial"
 urlcolor: blue
 ---
@@ -12,7 +14,7 @@ urlcolor: blue
 # Overview
 [R](https://www.r-project.org/) is a popular and powerful free program that can be used to conduct most of the statistical analyses outlined in *Introduction to the New Statistics*.  Unlike programs such as SPSS where analyses are usually conducted by clicking on menus, in R analyses are typically performed by typing *commands*.
 
-This document is a brief guide that will help you to get started using the 'new statistics' in R.  The guide is split into three sections.  The first section provides some tips about installing and learning the basics of R.  If you've never used R before you should read this section - if you already know how to use R you can skip it. The second section provides a brief overview of a new R package, [itns](https://github.com/gitrman/itns), that contains the datasets used in *Introduction to the New Statistics*.  You can use the datasets in the *itns* package to work through the examples covered in the book and the end-of-chapter exercises.  The final section provides a brief overview of R packages and functions that can be used to conduct the analyses covered in *Introdudction to the New Statistics*.
+This document is a brief guide that will help you to get started using the 'new statistics' in R.  The guide is split into three sections.  The first section provides some tips about installing and learning the basics of R.  If you've never used R before you should read this section - if you already know how to use R you can skip it. The second section provides a brief overview of a new R package, [itns](https://github.com/gitrman/itns), that contains the datasets used in *Introduction to the New Statistics*.  You can use the datasets in the *itns* package to work through the examples covered in the book and the end-of-chapter exercises.  The final section provides a short overview of R packages and functions that can be used to conduct the analyses covered in *Introdudction to the New Statistics*.
 
 You will notice that some words in this document are a blue colour.  These are hyperlinks.  If you click on the blue text, you will be redirected to websites that contain information about using R.
 
@@ -33,7 +35,49 @@ In the remainder of the document, we assume that you have a basic understanding 
 
 # Part Two - The *itns* Dataset Package
 
-'[itns](https://github.com/gitrman/itns)' is an R package which contains most of the datasets used in *Introduction to the New Statistics*.  The datasets were converted from Microsoft Excel files (found on the book's website) into R data frames.  The *itns* package is not yet on CRAN, but can be downloaded from github using the `devtools` package:
+'[itns](https://github.com/gitrman/itns)' is an R package which contains most of the datasets used in *Introduction to the New Statistics*.  The datasets were converted from Microsoft Excel files (found on the book's website) into R data frames.  The table on the next page lists the names of the data frames in the package, and the sections of the book where they are mentioned:
+
+\pagebreak
+
+**`itns` Package Data Frames**
+
+Name            |Section                  |Topic 
+---------------|------------------------|-----------------------------------
+college_survey1     |Ch 3 End of Chapter Exercises 2 & 3  |Descriptive Statistics & Plots
+religious_belief    |Ch 3 End of Chapter Exercise 4       |Descripitive Statistics & Plots
+college_survey1     |Ch 5 End of Chapter Exercises 2 & 3  |Single Sample Confidence Interval
+college_survey2     |Ch 5 End of Chapter Excercise 4      |Single Sample Confidence Interval
+stickgold           |Ch 6 End of Chapter Exercise 5       |Single Sample Confidence Interval
+pen_laptop1         |Ch 7.6-7.12                          |Two Independent Groups
+pen_laptop2         |Ch 7.36-7.38                         |Two Independent Groups
+anchor_estimate     |Ch 7 End of Chapter Exercise 3       |Two Independent Groups
+clean_moral1        |Ch 7 End of Chapter Exercise 4       |Two Independent Groups
+clean_moral2        |Ch 7 End of Chapter Exercise 4       |Two Independent Groups
+math_gender_iat     |Ch 7 End of Chapter Exercise 5       |Two Independent Groups
+thomason1           |Ch 8, 11, 12                         |Two Dependent Groups, Scatterplots, Regression
+thomason2           |Ch 8                                 |Two Dependent Groups
+thomason3           |Ch 8, 12.18                          |Two Dependent Groups, Regression
+emotion_heartrate    |Ch 8 End of Chapter Exercise 3       |Two Dependent Groups
+labels_flavor       |Ch 8 End of Chapter Exercise 4       |Two Dependent Groups
+ma_anchor_adjust    |Ch9 End of Chapter Exercise 1        |Meta-Analysis
+ma_flag_priming     |Ch9 End of Chapter Exercise 2        |Meta-Analysis
+ma_math_gender_iat  |Ch9 End of Chapter Exercise 3        |Meta-Analysis
+ma_power_performance|Ch9 End of Chapter Exercise 4        |Meta-Analysis
+body_well           |Ch 11, 12                            |Correlation, Regression
+exam_scores         |Ch 11 End of Chapter Exericse 2      |Correlation
+sleep_beauty        |Ch 11 End of Chapter Exericse 6      |Correlation
+campus_involvement  |Ch 11 End of Chapter Exericse 7      |Correlation
+home_prices         |Ch 12 End of Chapter Exercise 2      |Regression
+home_prices_holdout |Ch 12 End of Chapter Excerise 2h     |Regression
+altruism_happiness  |Ch 12 End of Chapter Exercise 3      |Regression
+rattan              |Ch 14.10-14.12                       |One-Way Independent Group Contrasts and Comparisons
+organic_moral       |Ch 14 End of Chapter Exercise 5      |One-Way Independent Group Contrasts and Comparisons
+videogame_aggression|Ch 15 End of Chapter Exercise 3      |Analysing factorial designs
+self_explain_time   |Ch 15 End of Chapter Exercise 4      |Analysing factorial designs
+natsal              |Ch 16.11                             |Robust Methods - Two Independent Groups
+dana                |Ch 16 End of Chapter Exercise 3      |Robust Methods - Two Independent Groups
+
+The `itns` package is not yet on [CRAN](https://cran.r-project.org), but can be downloaded from [github](https://github.com/gitrman/itns) using the `devtools` package:
 
 ```{r eval=FALSE}
  # install.packages("devtools")
@@ -41,224 +85,228 @@ In the remainder of the document, we assume that you have a basic understanding 
  install_github("gitrman/itns")
 ```
 
-The table below contains a list of names of the datasets in the package, and the sections of the book where they are mentioned:
+Once you have installed the package, you can use the `library()` function to load it, `str()` to examine metadata for each data frame, and functions such as `head()` and `tail()` to print the first or last few rows to your screen.
 
-**`itns` Package Data Frames**
-
-Name         |Section                |Topic 
--------------|-----------------------|---------------------------------
-college_survey1     |Ch 3 End of Chapter Exercises 2 & 3 |Descriptive Statistics & Plots
-religious_belief    |Ch 3 End of Chapter Exercise 4 |Descripitive Statistics & Plots
-college_survey1     |Ch 5 End of Chapter Exercises 2 & 3 |Single Sample Confidence Interval
-college_survey2     |Ch 5 End of Chapter Excercise 4 |Single Sample Confidence Interval
-stickgold           |Ch 6 End of Chapter Exercise 5 |Single Sample Confidence Interval
-pen_laptop1         |Ch 7.6-7.12 |Two Independent Groups
-pen_laptop2         |Ch 7.36-7.38 |Two Independent Groups
-anchor_estimate     |Ch 7 End of Chapter Exercise 3 |Two Independent Groups
-clean_moral1        |Ch 7 End of Chapter Exercise 4 |Two Independent Groups
-clean_moral2        |Ch 7 End of Chapter Exercise 4 |Two Independent Groups
-math_gender_iat     |Ch 7 End of Chapter Exercise 5 |Two Independent Groups
-thomason1           |Ch 8, 11, 12    |Two Dependent Groups, Scatterplots, Regression
-thomason2           |Ch 8            |Two Dependent Groups
-thomason3           |Ch 8, 12.18     |Two Dependent Groups, Regression
-emotion_hartrate    |Ch 8 End of Chapter Exercise 3 |Two Dependent Groups
-labels_flavor       |Ch 8 End of Chapter Exercise 4 |Two Dependent Groups
-ma_anchor_adjust    |Ch9 End of Chapter Exercise 1  | Meta-Analysis
-ma_flag_priming     |Ch9 End of Chapter Exercise 2  | Meta-Analysis
-ma_math_gender_iat  |Ch9 End of Chapter Exercise 3  | Meta-Analysis
-ma_power_performance|Ch9 End of Chapter Exercise 4  | Meta-Analysis
-body_well           |Ch 11, 12       |Correlation, Regression
-exam_scores         |Ch 11 End of Chapter Exericse 2 | Correlation
-sleep_beauty        |Ch 11 End of Chapter Exericse 6 | Correlation
-campus_involvement  |Ch 11 End of Chapter Exericse 7 | Correlation
-home_prices         |Ch 12 End of Chapter Exercise 2 |Regression
-home_prices_holdout |Ch 12 End of Chapter Excerise 2h |Regression
-altruism_happiness  |Ch 12 End of Chapter Exercise 3 |Regression
-rattan              |Ch 14.10-14.12    |One-Way Independent Group Contrasts and Comparisons
-organic_moral       |Ch 14 End of Chapter Exercise 5          |One-Way Independent Group Contrasts and Comparisons
-videogame_aggression|Ch 15 End of Chapter Exercise 3          |Analysing factorial designs
-self_explain_time   |Ch 15 End of Chapter Exercise 4         |Analysing factorial designs
-natsal              |Ch 16.11          |Robust Methods - Two Independent Groups
-dana                |Ch 16 End of Chapter Exercise 3           |Robust Methods - Two Independent Groups
-
-
-Once you have installed the package, you can use the `library()` function to load it, `str()` to examine metadata for each data frame, and functions such as `head()` and `tail()` to print the first or last few rows to your screen. 
-
-
-```{r eval}
+```{r}
  library(itns)     # loads the package
  str(pen_laptop1)  # displays metadata
  head(pen_laptop1) # prints the first few rows
  tail(pen_laptop1) # prints the last few rows
 ```
 
-
 To access further details about each dataset, type a question mark and the name of the dataset, for example:
 ```{r eval=FALSE}
   ?pen_laptop1
 ```
 
-or access the PDF help file **LINK TO GO HERE** on github.
+or access the PDF help file **LINK TO GO HERE** on the [itns github site](https://github.com/gitrman/itns).
 
 The datasets in the `itns` package can be used to replicate analyses that appear in *Introduction to the New Statistics*, and to work through the book's end-of-chapter exercises using the packages and functions outlined in the next section of this guide.
 
 # Part 3 - Helpful Packages and Functions
+Most of the analyses described in *Introduction to the New Statistics* can be conducted using inbuilt R functions, or functions in packages that can be downloaded from CRAN or github.  In this section we mention some useful functions and packages, and resources that will help you learn how to use them.  This section is *not* intended to be a comprehensive tutorial on how to use each function; rather, our aim is to point you in the direction of resources already on the Internet that will help you learn how to use the packages and functions we mention.
 
-Most of the analyses described in *Introduction to the New Statistics* can be conducted using inbuilt R functions, or functions in packages that 
-can be downloaded from CRAN or github.  In this section we mention some useful functions, packages, and resources that will help you learn how to use them.
+## Basic Descriptive Statistics
+Functions to compute basic descriptive statistics are built into R.  These include `mean()`, `median()`, `minimum()`, `maximum()`, `var` for variance, `sd()` for  the standard deviation, `IQR()` for interquantile range, `range()`, `quantile()` for percentiles, and `summary()` which for numeric variables returns the minimum, 25th percentile, median, mean, 75th percentile, and maximum.  Some examples of these functions in action are given below.  See [John Quirk's tutorial](https://rtutorialseries.blogspot.com.au/2009/11/r-tutorial-series-summary-and.html) on using basic descriptive statistics for more information.
+
+```{r}
+  # Compute basic descrpitive statistics for transcription score in pen_laptop1 data frame
+  # Mean
+    mean(pen_laptop1$transcription)
+  # Median
+    median(pen_laptop1$transcription) # Median
+  # Standard Deviation
+    sd(pen_laptop1$transcription)
+  # 0 to 100th percentile in steps of 10%  
+    quantile(pen_laptop1$transcription, probs = seq(0, 1, .1))
+  # Example of summary function output 
+    summary(pen_laptop1$transcription) 
+```
+
+### Summary Statistics By Group
+You will sometimes want to compute descriptive statistics separately for multiple groups.  There are many ways to do this.  One option is to use the `group_by()` and `summarise()` functions in the `dplyr` package, for example:
+
+```{r}
+# Compute mean and standard deviation separately for the laptop and pen groups
+  library(dplyr)
+  pen_laptop1 %>%
+    group_by(group) %>%
+    summarise(
+      mean = mean(transcription),
+      sd = sd(transcription)
+    )
+```
+
+For more information read the see the section on *Grouped Operations* in the [dplyr tutorial](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html).
+
+Other options for computing descriptive statistics separately for different groups include using the inbuilt R function [aggregate()](http://www.inside-r.org/r-doc/stats/aggregate) or the [doBy package](https://cran.r-project.org/web/packages/doBy/vignettes/doBy.pdf).
 
 
-### Basic Descriptive Statistics
+## Data Visualisation (Plotting)
 
-Functions to compute basic descriptive statistics are built into R.  Some of these are listed in the table below:
+R has three systems that can be used for data visualisation - [Base graphics](http://rpubs.com/SusanEJohnston/7953), [lattice](https://rstudio-pubs-static.s3.amazonaws.com/12556_4e02f5564dc24b57b7a8f6d95d2a5cf7.html), and [ggplot2](http://ggplot2.org). The STHDA wesbite has [guides to creating graphics](http://www.sthda.com/english/wiki/data-visualization) using all three systems.
 
-**Functions For Computing Descriptive Statistics**
+Base graphics , lattice, and ggplot2 all have functions for plotting histograms and dotpolots, covered in Chapter 3 of *Introduction to The New Statistics*.  Here are some examples of simple histograms produced by the three packages:
 
-Statistic           | Function
-------------------- | -------------
-Mean                | [mean()](http://www.inside-r.org/r-doc/base/mean)
-Median              | [median()](http://www.inside-r.org/r-doc/stats/median)
-Minimum             | [min()](http://www.inside-r.org/r-doc/base/Extremes)
-Maximum             | [max()](http://www.inside-r.org/r-doc/base/Extremes)
-Variance            | [var()](http://www.inside-r.org/r-doc/stats/cor)
-Standard Deviation  | [sd()](http://www.inside-r.org/r-doc/stats/sd)
-Interquartile Range | [IQR()](http://www.inside-r.org/r-doc/stats/IQR)
-Range               | [range()](http://www.inside-r.org/r-doc/base/range)
-Percentile          | [quantile()](http://www.inside-r.org/r-doc/stats/quantile)
+```{r}
+# Examples of histograms created using the lattice graphics package
+# Base histogram
+  hist(pen_laptop1$transcription)
+# lattice histogram
+  library(lattice)
+  histogram(~transcription, data = pen_laptop1)
+# ggplot2  
+  library(ggplot2)
+  ggplot(pen_laptop1, aes(transcription) ) + geom_histogram(bins = 7, colour="black", fill="white")
+```
 
-[summary()](https://stat.ethz.ch/R-manual/R-devel/library/base/html/summary.html)
+If you are new to R and want to learn one graphics package, we recommend learning how to use `ggplot2` as it is the most powerful and flexible system.  Resources that will help you learn how to use `ggplot2` include:
 
-**Useful tutorials**
-*[John Quirk's Summary and Descriptive Statistics](https://rtutorialseries.blogspot.com.au/2009/11/r-tutorial-series-summary-and.html)
+* [Winston Chang's R Graphics Cookbook](http://www.cookbook-r.com/Graphs).
+* [STHDA's ggplot2 essentials](http://www.sthda.com/english/wiki/ggplot2-essentials).
+* Hadley Wickham's [ggplot2 book](https://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/331924275X/ref=dp_ob_title_bk).
+* [DataCamp's ggplot2 courses](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1).
+* [Harvard Introduction to ggplot2](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html).
+* [R4Stats ggplot2 tutorial](http://r4stats.com/examples/graphics-ggplot2).
+* [ggplot2 online documentation](http://docs.ggplot2.org/current/index.html).
+* [R-Studio's Data Visualisation cheatsheet](https://www.rstudio.com/resources/cheatsheets).
+* An [online workshop](http://moc.environmentalinformatics-marburg.de/gitbooks/publicationQualityGraphics/_book/index.html) about creating publication quality graphics using the ggplot2 and lattice graphics packages by Tim Appelhans.
 
+If you are interested in learning the lattice package, a good place to start is the [STHDA Lattice Guide](http://www.sthda.com/english/wiki/lattice-graphs). R-Studio also have a good [Guide to R Graphics using lattice](https://rstudio-pubs-static.s3.amazonaws.com/12556_4e02f5564dc24b57b7a8f6d95d2a5cf7.html).  There is also a [book about the Lattice package](https://www.springer.com/gp/book/9780387759685).
 
-#### Computing Descriptive Statistics For Multiple groups
-There are many ways to do this.  We recommend using dplyr package:
+### ggplot2 histogram and dotplot tutorials
 
-dplyr [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html), see the section on *Grouped Operations* using the group_by() and summarise() functions
+* [R Bloggers - How to make a histogram with ggplot2](http://www.r-bloggers.com/how-to-make-a-histogram-with-ggplot2)
+* [STHDA Histogram Tutorial](http://www.sthda.com/english/wiki/ggplot2-histogram-plot-quick-start-guide-r-software-and-data-visualization)
+* [STHDA Guide to making dotplots](http://www.sthda.com/english/wiki/ggplot2-dot-plot-easy-function-for-making-a-dot-plot#dot-plot-with-multiple-groups)
+* [ggplot2 documentation](http://docs.ggplot2.org/current/geom_dotplot.html) for the geom_dotplot() geom
 
-Give an example of computing mean and standard deviation.
-
-Other options include using the inbuilt R function [aggregate()](http://www.inside-r.org/r-doc/stats/aggregate) or the [doBy package](https://cran.r-project.org/web/packages/doBy/vignettes/doBy.pdf).
-
-
-### Z-Scores
+## Z-Scores
 [John Quick's tutorial](http://www.r-bloggers.com/r-tutorial-series-centering-variables-and-generating-z-scores-with-the-scale-function) shows how to use R's inbuilt scale() function to compute Z-scores.  See also [Seam Dolinar's
-tutorial](http://stats.seandolinar.com/calculating-z-scores-with-r/) on Calculating Z scores and finding tail probabilities.
+tutorial](http://stats.seandolinar.com/calculating-z-scores-with-r/) on calculating Z scores and finding tail probabilities.
 
-## Plots
-Three graphics systems - base graphics, lattice, and ggplot2.
-
-For new users, would recommend learning ggplot2 first as it is the most flexible.
-
-Deducer has an excellent GUI for ggplot2 that makes it easier to create plots.
-
-[This tutoral](http://personal.colby.edu/personal/m/mgimond/RIntro/05_Plotting_systems.html) provides an overview of the three systems with examples.
-
-Tim Appelhans has a [comprehensive tutorial](http://moc.environmentalinformatics-marburg.de/gitbooks/publicationQualityGraphics/_book/chapters/02_data_visualisation/scatter_lattice.html) about creating publication quality graphics using lattice and ggplot2 systems.
-
-he also notes that
-"google is your friend - for R related questions just type something like this 'r lattice how to change plot background color' The crux here is that you provide both the programming language - R - and the name of the package your question is related to - lattice. This way you will very likely find useful answers (the web is full of knowledgeable geeks)""
-
-
-Histogram
-
-Dotplot
-
-
-
-Best place to start is probably the [Getting Started with Lattice Graphics](http://lattice.r-forge.r-project.org/Vignettes/src/lattice-intro/lattice-intro.pdf) tutorial by Deepayan Sarkar.
-
-His [Lattice book](https://www.springer.com/gp/book/9780387759685) provides more comprehensive information.
-
-
-[ggplot2 book website](http://ggplot2.org/book/)
-[ggplot2 online documentation](http://docs.ggplot2.org/current/index.html)
-
-[Winston Chang's R Graphic's Cookbook](http://www.cookbook-r.com/Graphs)
-
-[Harvard Introduction to ggplot2](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
-
-[Zevross ggplot2 tutoial](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
-
-[ggplot2 tutorial](https://github.com/jennybc/ggplot2-tutorial)
-
-DataCamp online courses (cost money)
-https://www.datacamp.com/courses/data-visualization-with-ggplot2-1
-
-[RStudio ggplot2 cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
-
-## Confidence Intervals and Effect Sizes
-
-Cat's eye picture
-Find tail areas for any T value, for any DF
-Find critical value of t given df and a tail probability
-
-Calculate MOE and 95% CI on a mean for single sample, usuing Z or t
-
-## The Normal Distribution and Sampling
-Find tail areas for X or Z values
-Find X given z
-
-## p Values, Null Hypothesis Significance Testing, and Confidence Intervals
-
-Calculate p values gor single samples, using z or t
-
-[Kelly Black's tutorial](http://www.cyclismo.org/tutorial/R/pValues.html) shows how to compute p values using z- or t-distributions.
-
-[Kelly Black's tutorial](http://www.cyclismo.org/tutorial/R/confidence.html)  shows how to calculate confidence intervals for means using normal or t-distributions.
-
-The easiest way to compute confidence intervals and p values is using the t.test() function.
-
-ggplot showing CI on a mean?
+## P-values and Confidence Intervals for a Single Sample
+Kelly Black has written tutorials showing how to [compute p values using z- or t-distributions](http://www.cyclismo.org/tutorial/R/pValues.html), and how to [calculate confidence intervals for means using normal or t-distributions](http://www.cyclismo.org/tutorial/R/confidence.html).
 
 ## t.test() function
-The t.test() function is built into R.  It produces confidence intervals and p-values for single samples, two independent groups, and paired samples.
+The `t.test()` function is built into R.  It produces confidence intervals and p-values for single samples, two independent groups, and paired samples.
 
-Give examples using itns data.
+```{r}
+# Single Sample
+t.test(pen_laptop1$transcription)
 
-t.test(x, y, conf.level=ci, var.equal = TRUE)
-t.test(x, y, conf.level=ci, var.equal = FALSE)
-t.test(x, y, paired = TRUE)
+# Two Independent Groups - by default the Welch T-Test (equal variances not assumed) is calculated
+t.test(transcription ~ group, data = pen_laptop1)
+
+# Two Independent Groups - assuming variances are equal
+t.test(transcription ~ group, data = pen_laptop1, var.equal = TRUE)
+
+# Paired Samples
+t.test(thomason1$pre, thomason1$post, paired = TRUE)
+```
 
 ## MBESS package
-library(MBESS)
-Ken Kelly's [MBESS (Methods for the Behavioural and Social Sciences)](https://www3.nd.edu/~kkelley/site/MBESS.html) package.
+Ken Kelly's [MBESS (Methods for the Behavioural and Social Sciences)](https://www3.nd.edu/~kkelley/site/MBESS.html) package contains numerous functions for computing confidence intervals for many effect sizes, including standardised mean differences, mean contrasts in one-way and factorial designs, unstandardised and standardised regression coefficients, R-squared, etc.  The MBESS also includes functions for power analysis and sample size planning for precision.  The [MBESS website](https://www3.nd.edu/~kkelley/site/MBESS.html) contains links to two journal articles about the package, and help files.
 
-Includes functions for computing confidence intervals around the standardised mean difference, unstandardised and standardised regression coefficients, reliability coefficents, ANOVA contrasts, R-squared, and more.  Also includes functions for power analysis and sample size planning.
+## effsize package
+The `MBESS` package contains the functions `smd()` and `ci.smd` which can be used to compute the standardized mean difference for the two independent groups design, and a confidence interval.  However, using MBESS for this task is somewhat cumbersome as the effect size estimate and confidence interval have to be calculated in separate steps, and you also need to manually compute the sample size in each group in order to calculate the confidence interval.
 
-Demonstrate some key functions related to book.
+```{r}
+# Use dplyr package to extract transcription scores for 
+# the laptop and pen groups in the pen_laptop1 dataset
+   # library(dplyr) # load dplyr if it has not already been loaded
+    laptop <- pen_laptop1 %>% filter(group == "Laptop")
+    pen <- pen_laptop1 %>% filter(group == "Pen")
+# Install MBESS if it is not already installed
+    # install.packages("MBESS")
+# Load MBESS library
+    library(MBESS)
+# Use the smd() function to compute d-biased (Cohen's d)
+    es <- smd(laptop$transcription, pen$transcription)
+# Sample sizes
+    n1 <- nrow(pen)
+    n2 <- nrow(laptop)
+# Use ci.smd() to compute a 95% confidence interval for the biased estimate
+    ci.smd(smd = es, n.1 = n1, n.2 = n2)
+```
 
-CI on difference between means
-Cohen's d
+A faster way to compute the standardized mean difference and confidence interval is to use the `cohen.d` function in the [effsize](https://github.com/mtorchiano/effsize) package, which can be downloaded from CRAN.
 
-Effect Sizes and Confidence Intervals
-Sample Size and Parameter Estimation Sample Size Planning
+```{r}
+  # Install effsize package if it is not already installed
+    install.packages("effsize")
+  # Load library
+    library(effsize)
+  # Compute d-biased
+    cohen.d(transcription ~ group, data = pen_laptop1, noncentral = TRUE)
+  # Compute d-unbiased
+    cohen.d(transcription ~ group, data = pen_laptop1, noncentral = TRUE, hedges.correction = TRUE)
+```
 
-Any precision for planning functions
-Any statistical power functions
+The `cohen.d()` function can also be used to compute Cohen's d for paired designs, however note that the function uses the *standard deviation of the change scores* rather than the *standard deviation of the original scores* as the standardizer.
 
-## WRS and WRS2 packages
+```{r}
+  cohen.d(thomason1$pre, thomason1$post, noncentral = TRUE, paired = TRUE)
+
+```
+
+# Effect sizes for paired design, but no CIs
+install.packages("PairedData")
+library(PairedData)
+p <- paired(thomason1$pre, thomason1$post)
+effect.size(p)
+?paired
+PairedData::yuen.t.test(p)
+
+
+# bootES
+install.packages("bootES")
+library(bootES)
+
+# DescTools
+# Single sample CI
+library(DescTools)
+MeanCI(thomason1$pre)
+BinomCI() # CI for propoertion
+BinomDiffCI() # CI for risk difference
+BinomRatioCI() # CI for ratio of binomial proportions
+
+laptop
+pen
+
+# Perfect t test - for avg as CI
+
+#Effect sizes and 95% CI
+#Cohen's d_av, using s_av as standardizer
+https://github.com/Lakens/perfect-t-test/blob/master/Perfect_dependent_t-test.Rmd
+
+require(MBESS) # to calculate non-central t limits
+
+d_av <- m_diff/s_av
+d_unb <- (1-(3/(4*(N-1)-1)))*d_av #note this is approximation of correction for Hedges'g - ESCI uses accurate correction, so should we.
 
 
 
-## Standardized Paired Difference
-Is there any function for this?
-Or show how to compute by hand and use noncentral T from MBESs
-CI on mean difference
-d using SD-average (of pre and post) as standardizer
+x <- thomason1$pre
+y <- thomason1$post
+ci = 95
+
+
+
+
 
 
 ## Meta-Analysis
 There are numerous R packages that can be used to conduct meta-analyses for a wide variety of effect sizes such as means, mean differences, standardized mean differences, proportions, odds rations, etc. See the [CRAN Meta-Analysis Task View](https://cran.r-project.org/web/views/MetaAnalysis.html) for a comprehensive list of them.
 
-A popular and well documented package for conducting meta-analyses in R is [metafor](http://www.metafor-project.org).  See the comprehensive [metafor website](http://www.metafor-project.org) for more information.
+A popular and well documented package for conducting meta-analyses in R is [metafor](http://www.metafor-project.org).  See the detailed [metafor website](http://www.metafor-project.org) for more information.
 
 [metagear](http://lajeunesse.myweb.usf.edu/publications.html) 
 is a relatively new package which has meta-analytic capabilities as well as functions that help users conduct systematic reviews  and generate [PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses)](http://www.prisma-statement.org/) flow charts.  [This vignette](http://lajeunesse.myweb.usf.edu/metagear/metagear_basic_vignette.html) provides an overview of the metagrear package.
 
-Other useful sources of information about conducting meta-analyses in R include:  
-* [A.C Del Re's Practical Tutorial](http://www.tqmp.org/RegularArticles/vol11-1/p037/p037.pdf) on Conducting Meta-Analysis in R using the metafor and MAd packages
+Other useful sources of information about conducting meta-analyses in R include:
+
+* [A.C Del Re's Practical Tutorial](http://www.tqmp.org/RegularArticles/vol11-1/p037/p037.pdf) on conducting Meta-Analysis in R using the metafor and MAd packages
 * Stephanie Kovalchik's [Tutorial on Meta-Analysis in R](http://www.edii.uclm.es/~useR-2013/Tutorials/kovalchik/kovalchik_meta_tutorial.pdf) from the 2013 useR! Conference
 * Schwarzer, Carpenter, and Rucker's [Meta-Analysis with R](https://link.springer.com/book/10.1007/978-3-319-21416-0) book
 * [R-Studio's tutorial](https://rstudio-pubs-static.s3.amazonaws.com/10913_5858762ec84b458d89b0f4a4e6dd5e81.html) on running meta-analyses in R using the metafor package
@@ -267,14 +315,12 @@ Other useful sources of information about conducting meta-analyses in R include:
 
 
 ## multicon plots
+For Cat's Eye Pictures, may also integrate into graphics section
+
 egraph() - A function for plotting means as dots and error bars without caps around them
 catseye() - A function for creating cat's eye plots of group means
 diffPlot() - A function for creating difference plots for two group (both paired and independent) comparisons
 
-
-## Open Science and Planning Research
-
-MBESs does this
 
 ## Correlation
 Basic scatterplot
@@ -303,7 +349,7 @@ Also countless other packages for fitting a variety of regression models in R.
 Prediction intervals for individual values of Y at particular X values
 
 
-## Frequencies, Proportions, and Risk
+## Categorical Data - Frequencies, Proportions, and Risk
 CI for a proportion
 CI for difference between two independent proprtions
 Figure for CI on a single proportion
@@ -328,7 +374,9 @@ And chi-square function I used for recent WCBCT analyses.
 R manual to accompany Agresti's Categorical Data Analysis 2nd Ed by Laura Thompson
 http://www.stat.ufl.edu/~aa/cda/Thompson_manual.pdf
 
-## Extended Designs - One Independent Variable
+## Extended Designs - One-Way and Factorial Designs
+
+Independent Variable
 One way independent groups design
 CI for planned contrasts, on two means
 Figures if possible
@@ -346,61 +394,13 @@ Simple man effect
 
 Nice to include two way repeated measures if possible
 
-## Open Science and Future Directions
+## Robust Methods
+WRS and WRS2 packages
 
 Trimmed means for two independent means
 
-
-
-
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
-
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
-
-## Vignette Info
-
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
-
-## Styles
-
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
-
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
-
-## Figures
-
-The figure sizes have been customised so that you can easily put two images side-by-side. 
-
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
-```
-
-You can enable figure captions by `fig_caption: yes` in YAML:
-
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
-
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
-
+BootES 
+https://web.williams.edu/Psychology/Faculty/Kirby/bootes-kirby-gerlanc-in-press.pdf
 
 
 

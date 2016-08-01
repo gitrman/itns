@@ -12,11 +12,14 @@ URL: https://github.com/gitrman/itns, http://www.thenewstatistics.com
 BugReports: https://github.com/gitrman/itns/issues
 Description: The itns package contains almost 40 datasets from psychology studies 
     used in book Introduction to the New Statistics by Geoff Cumming 
-    and Robert Calin-Jageman, published by Routledge in August 2016. 
+    and Robert Calin-Jageman, published by Routledge in late 2016. 
     The datasets can be used to replicate analyses that appear in Introduction to 
-    the New Statistics, and to work through the book's end-of-chapter exercises.
+    the New Statistics, and to work through the book's end-of-chapter exercises.  
+    Also included is a function to compute Cohen's d for repeated measures designs.
 Depends:
     R (>= 3.1.0)
+Imports:
+    MBESS (>= 4.0.0)
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1
