@@ -4,5 +4,7 @@ language: R
 sudo: false
 cache: packages
 
-before_install:
-  apt-get install libgsl0-dev
+addons:
+   apt:
+     packages:
+       - libgsl0-dev # for gls, which is an import of MBESS
