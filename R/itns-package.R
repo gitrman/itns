@@ -2,7 +2,7 @@
 #' 
 #' The itns package contains datasets from psychology studies 
 #' used in book \emph{Introduction to the New Statistics} by Geoff Cumming 
-#' and Robert Calin-Jageman, published by Routledge in August 2016.
+#' and Robert Calin-Jageman, published by Routledge in late 2016.
 #' 
 #' The original source of the datasets is a series of Excel files found on the 
 #' \emph{Introduction to the New Statistics} website.  Those Excel files have been 
@@ -21,8 +21,7 @@
 #' The datasets can be used to replicate analyses that appear in \emph{Introduction to
 #' the New Statistics}, and to work through the book's end-of-chapter exercises.
 #' 
-#' At present the itns package contains all datasets from the book except those used in 
-#' the meta-analysis chapter. Those will be added at a later date.
+#' Also included is a function to compute Cohen's d effect size for paired samples.
 #' 
 #'@references
 #'Cumming, G., & Calin-Jageman, R. (2017).
