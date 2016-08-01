@@ -18,13 +18,12 @@
 }}
 \source{
 This is data is available online at \url{https://osf.io/wx7ck} from this study:
-Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Bahník, Š., Bernstein, M. J.,
-... Nosek, B. A. (2014). Investigating Variation in Replicability. 
-\emph{Social Psychology, 45}(3), 142–152. \url{http://doi.org/10.1027/1864-9335/a000178}
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahnik, S., Bernstein, M. J., ... & Nosek, B. A. (2014).
+Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152. \url{http://doi.org/10.1027/1864-9335/a000178}
 
 The original study exploring this effect is:
 Jacowitz, K. E., & Kahneman, D. (1995). Measures of Anchoring in Estimation Tasks. 
-\emph{Personality and Social Psychology Bulletin, 21}(11), 1161–1166. 
+\emph{Personality and Social Psychology Bulletin, 21}(11), 1161-1166. 
 \url{http://doi.org/10.1177/01461672952111004}
 }
 \usage{

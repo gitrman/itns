@@ -18,11 +18,13 @@
 #'@return A numeric vector of length three comprising the estimated effect size 
 #'  (est), lower limit of the confidence interval (ll), and upper limit of the 
 #'  confidence interval (ul).
+#'  
+#'@import stats
 #'@export
 #'
 #' @examples
 #' \dontrun{
-#'    cohend_rm(x = thomason1$pre, y = thomason1$post)
+#'    cohensd_rm(x = thomason1$pre, y = thomason1$post)
 #' }
 #'@references Algina, J. A., & Keselman, H. J. (2003). Approximate Confidence
 #'Intervals for Effect Sizes. \emph{Educational and Psychological Measurement,
@@ -30,7 +32,7 @@
 #'
 #'Cumming, G. (2012). \emph{Understanding The New Statistics:
 #'Effect Sizes, Confidence Intervals, and Meta-Analysis}. Routledge; New York.
-cohend_rm <- function(x, y, ci = 95, unbiased = FALSE){
+cohensd_rm <- function(x, y, ci = 95, unbiased = FALSE){
   # Check for unequal Ns
   if(length(x)!=length(y)) 
     stop("x and y do not have the same number of observations")
@@ -45,7 +47,8 @@ cohend_rm <- function(x, y, ci = 95, unbiased = FALSE){
   a <- stats::t.test(x, y, paired = TRUE, conf.level = ci/100)  # compute paired t-test
   ncp <- a$statistic                    # paired t-statistic is the noncentrality parameter
   b <- a$parameter                      # extract df
-  nct_limits <- MBESS::conf.limits.nct(t.value = ncp, df = n-1, conf.level = ci/100) # compute noncentrality limits
+  n <- length(x) - 1                    # sample size
+  nct_limits <- MBESS::conf.limits.nct(t.value = ncp, df = b, conf.level = ci/100) # compute noncentrality limits
   mult <- sqrt(2*(var(x) + var(y) - 2*cov(x, y)) / (n*(var(x) + var(y))))  # multiplication factor
   ll <- nct_limits$Lower.Limit*mult     # lower limit of CI
   ul <- nct_limits$Upper.Limit*mult     # upper limit of CI
@@ -56,5 +59,3 @@ cohend_rm <- function(x, y, ci = 95, unbiased = FALSE){
   names(out) <- c("est", "ll", "ul")
   out
 }
-
-?cohend_rm

@@ -6,17 +6,17 @@
 \title{Meta-Analysis Example - Power and Performance}
 \format{A data frame with 8 rows and 14 variables: 
 \describe{ 
- \item{country}{Factor with 12 levels indicating the country where the study was conducted}
+ \item{country}{Factor with 2 levels indicating the country where the study was conducted}
  \item{sample}{Factor indicating if the sample was drawn from an undergrad populaiton or from an online site}
  \item{difficulty}{Factor indicating if the task was of normal difficulty or high difficulty}
  \item{manipulation}{If power was manipulated by memory recall or by word search}
  \item{dvtype}{Factor indicating whether the DV was a motor task or a cognitive task}
  \item{dv}{Factor indicating whether the dependent variable was golf, darts, mirror-tracing, or word production}
  \item{study}{Factor indicating the name of the study}
- \item{m_control}{Mean score for the power group}
- \item{sd_control}{Standard deviation for the power group}
- \item{m_power}{Mean score for the control group}
+ \item{m_control}{Mean score for the control group}
  \item{sd_control}{Standard deviation for the control group}
+ \item{m_power}{Mean score for the power group}
+ \item{sd_power}{Standard deviation for the power group}  
  \item{cohensd}{Standardized effect size difference comparing control to power groups where positive numbers 
  indicate an advantage for the power group}
  \item{n_control}{Sample size for control group}

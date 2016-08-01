@@ -19,10 +19,10 @@ Description: The itns package contains almost 40 datasets from psychology studie
 Depends:
     R (>= 3.1.0)
 Imports:
-    MBESS (>= 4.0.0)
+    MBESS (>= 4.0.0),
+    stats
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1
 Suggests: knitr,
     rmarkdown
-VignetteBuilder: knitr

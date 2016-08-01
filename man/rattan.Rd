@@ -38,9 +38,9 @@ towards mathematics after they had received the feedback.
 Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
  New Statistics}. New York; Routledge.
 
-Rattan, A., Good, C., & Dweck, C. S. (2012). “It's ok—Not everyone 
-can be good at math”: Instructors with an entity theory comfort (and demotivate) 
-students. \emph{Journal of Experimental Social Psychology, 48}, 731–737.
+Rattan, A., Good, C., & Dweck, C. S. (2012). "It's ok - Not everyone 
+can be good at math": Instructors with an entity theory comfort (and demotivate) 
+students. \emph{Journal of Experimental Social Psychology, 48}, 731-737.
 }
 \keyword{datasets}
 

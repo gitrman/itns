@@ -8,22 +8,21 @@
 \describe{ 
  \item{location}{Name of the lab that ran the study}
  \item{m_flagprimed}{Mean conservatism score for flag-primed group. Score can range from 1 to 7,low scores indicate liberal attitudes, high scores indicate conservative attitudes.}
- \item{sd_lowanchor}{Standard deviation for those given the flag-primed group}
+ \item{sd_flagprimed}{Standard deviation for those given the flag-primed group}
  \item{n_flagprimed}{Sample size for flag-primed group}
- \item{m_flagprimed}{Mean conservatism score for neutral group}
- \item{sd_lowanchor}{Standard deviation for those given the neutralgroup}
- \item{n_flagprimed}{Sample size for neutral group}
+ \item{m_neutralprimed}{Mean conservatism score for neutral group}
+ \item{sd_neutralprimed}{Standard deviation for those given the neutral group}
+ \item{n_neutralprimed}{Sample size for neutral group}
 }}
 \source{
 This is data is available online at \url{https://osf.io/wx7ck} from this study:
-Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Bahník, Š., Bernstein, M. J.,
-... Nosek, B. A. (2014). Investigating Variation in Replicability. 
-\emph{Social Psychology, 45}(3), 142–152. \url{http://doi.org/10.1027/1864-9335/a000178}
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahnik, S., Bernstein, M. J., ... & Nosek, B. A. (2014).
+Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152. \url{http://doi.org/10.1027/1864-9335/a000178}
 
 The original study exploring this effect is:
 Carter, T. J., Ferguson, M. J., & Hassin, R. R. (2011). A Single Exposure to the American 
 Flag Shifts Support Toward Republicanism up to 8 Months Later. \emph{Psychological Science, 22}, 
-1011–1018. \url{http://doi.org/10.1177/0956797611414726}
+1011-1018. \url{http://doi.org/10.1177/0956797611414726}
 }
 \usage{
 ma_flag_priming

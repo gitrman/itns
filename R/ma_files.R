@@ -33,13 +33,12 @@
 #'@source
 #'
 #'This is data is available online at \url{https://osf.io/wx7ck} from this study:
-#' Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Bahník, Š., Bernstein, M. J.,
-#' ... Nosek, B. A. (2014). Investigating Variation in Replicability. 
-#' \emph{Social Psychology, 45}(3), 142–152. \url{http://doi.org/10.1027/1864-9335/a000178}
+#'Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahnik, S., Bernstein, M. J., ... & Nosek, B. A. (2014).
+#'Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152. \url{http://doi.org/10.1027/1864-9335/a000178}
 #'
 #'The original study exploring this effect is:
 #'Jacowitz, K. E., & Kahneman, D. (1995). Measures of Anchoring in Estimation Tasks. 
-#'\emph{Personality and Social Psychology Bulletin, 21}(11), 1161–1166. 
+#'\emph{Personality and Social Psychology Bulletin, 21}(11), 1161-1166. 
 #'\url{http://doi.org/10.1177/01461672952111004}
 #'      
 #'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
@@ -74,24 +73,23 @@
 #'\describe{ 
 #'  \item{location}{Name of the lab that ran the study}
 #'  \item{m_flagprimed}{Mean conservatism score for flag-primed group. Score can range from 1 to 7,low scores indicate liberal attitudes, high scores indicate conservative attitudes.}
-#'  \item{sd_lowanchor}{Standard deviation for those given the flag-primed group}
+#'  \item{sd_flagprimed}{Standard deviation for those given the flag-primed group}
 #'  \item{n_flagprimed}{Sample size for flag-primed group}
-#'  \item{m_flagprimed}{Mean conservatism score for neutral group}
-#'  \item{sd_lowanchor}{Standard deviation for those given the neutralgroup}
-#'  \item{n_flagprimed}{Sample size for neutral group}
+#'  \item{m_neutralprimed}{Mean conservatism score for neutral group}
+#'  \item{sd_neutralprimed}{Standard deviation for those given the neutral group}
+#'  \item{n_neutralprimed}{Sample size for neutral group}
 #'}
 #'
 #'@source
 #'
 #'This is data is available online at \url{https://osf.io/wx7ck} from this study:
-#' Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Bahník, Š., Bernstein, M. J.,
-#' ... Nosek, B. A. (2014). Investigating Variation in Replicability. 
-#' \emph{Social Psychology, 45}(3), 142–152. \url{http://doi.org/10.1027/1864-9335/a000178}
+#'Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahnik, S., Bernstein, M. J., ... & Nosek, B. A. (2014).
+#'Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152. \url{http://doi.org/10.1027/1864-9335/a000178}
 #'
 #'The original study exploring this effect is:
 #'Carter, T. J., Ferguson, M. J., & Hassin, R. R. (2011). A Single Exposure to the American 
 #'Flag Shifts Support Toward Republicanism up to 8 Months Later. \emph{Psychological Science, 22}, 
-#'1011–1018. \url{http://doi.org/10.1177/0956797611414726}
+#'1011-1018. \url{http://doi.org/10.1177/0956797611414726}
 #'      
 #'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
 #'New Statistics}. New York; Routledge.
@@ -122,22 +120,21 @@
 #'  \item{n_male}{Sample size for males}
 #'  \item{m_female}{Mean IAT score for females}
 #'  \item{sd_female}{Standard deviation for females on IAT}
-#'  \item{n_fenmale}{Sample size for females on IAT}
+#'  \item{n_female}{Sample size for females on IAT}
 #'  \item{subset}{Factor indicating whether the study was conducted in the USA or not}
 #'  \item{country}{Factor with 12 levels indicating the country where the study was conducted}
 #'}
 #'  
 #'@source
 #'This is data is available online at \url{https://osf.io/wx7ck} from this
-#'study: Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Bahník, Š.,
-#'Bernstein, M. J., ... Nosek, B. A. (2014). Investigating Variation in
-#'Replicability. \emph{Social Psychology, 45}(3), 142–152.
-#'\url{http://doi.org/10.1027/1864-9335/a000178}
+#'study: 
+#'Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahnik, S., Bernstein, M. J., ... & Nosek, B. A. (2014).
+#'Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152. \url{http://doi.org/10.1027/1864-9335/a000178}
 #'
 #'The original study exploring this effect is: 
 #'Nosek, B. a, Banaji, M. R., & Greenwald, A. G. (2002). 
 #'Math = male, me = female, therefore math not = me. 
-#'\emph{Journal of Personality and Social Psychology, 83}(1), 44–59. 
+#'\emph{Journal of Personality and Social Psychology, 83}(1), 44-59. 
 #'\url{http://doi.org/10.1037/0022-3514.83.1.44}
 #'
 #'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
@@ -169,17 +166,17 @@
 #'
 #'@format A data frame with 8 rows and 14 variables: 
 #'\describe{ 
-#'  \item{country}{Factor with 12 levels indicating the country where the study was conducted}
+#'  \item{country}{Factor with 2 levels indicating the country where the study was conducted}
 #'  \item{sample}{Factor indicating if the sample was drawn from an undergrad populaiton or from an online site}
 #'  \item{difficulty}{Factor indicating if the task was of normal difficulty or high difficulty}
 #'  \item{manipulation}{If power was manipulated by memory recall or by word search}
 #'  \item{dvtype}{Factor indicating whether the DV was a motor task or a cognitive task}
 #'  \item{dv}{Factor indicating whether the dependent variable was golf, darts, mirror-tracing, or word production}
 #'  \item{study}{Factor indicating the name of the study}
-#'  \item{m_control}{Mean score for the power group}
-#'  \item{sd_control}{Standard deviation for the power group}
-#'  \item{m_power}{Mean score for the control group}
+#'  \item{m_control}{Mean score for the control group}
 #'  \item{sd_control}{Standard deviation for the control group}
+#'  \item{m_power}{Mean score for the power group}
+#'  \item{sd_power}{Standard deviation for the power group}  
 #'  \item{cohensd}{Standardized effect size difference comparing control to power groups where positive numbers 
 #'  indicate an advantage for the power group}
 #'  \item{n_control}{Sample size for control group}

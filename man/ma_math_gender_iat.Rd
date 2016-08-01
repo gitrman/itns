@@ -13,21 +13,20 @@ attitudes about math}
  \item{n_male}{Sample size for males}
  \item{m_female}{Mean IAT score for females}
  \item{sd_female}{Standard deviation for females on IAT}
- \item{n_fenmale}{Sample size for females on IAT}
+ \item{n_female}{Sample size for females on IAT}
  \item{subset}{Factor indicating whether the study was conducted in the USA or not}
  \item{country}{Factor with 12 levels indicating the country where the study was conducted}
 }}
 \source{
 This is data is available online at \url{https://osf.io/wx7ck} from this
-study: Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Bahník, Š.,
-Bernstein, M. J., ... Nosek, B. A. (2014). Investigating Variation in
-Replicability. \emph{Social Psychology, 45}(3), 142–152.
-\url{http://doi.org/10.1027/1864-9335/a000178}
+study: 
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahnik, S., Bernstein, M. J., ... & Nosek, B. A. (2014).
+Investigating Variation in Replicability. \emph{Social Psychology, 45}, 142-152. \url{http://doi.org/10.1027/1864-9335/a000178}
 
 The original study exploring this effect is: 
 Nosek, B. a, Banaji, M. R., & Greenwald, A. G. (2002). 
 Math = male, me = female, therefore math not = me. 
-\emph{Journal of Personality and Social Psychology, 83}(1), 44–59. 
+\emph{Journal of Personality and Social Psychology, 83}(1), 44-59. 
 \url{http://doi.org/10.1037/0022-3514.83.1.44}
 }
 \usage{
