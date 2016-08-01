@@ -3,3 +3,6 @@
 language: R
 sudo: false
 cache: packages
+
+before_install:
+  apt-get install libgsl0-dev
