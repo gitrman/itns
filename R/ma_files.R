@@ -43,7 +43,7 @@
 #'      
 #'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
 #'New Statistics}. New York; Routledge.
-"ma_anchor_adjust"
+"anchor_estimate_ma"
 
 
 #'Meta-Analysis Example - Replication of Flag Priming and Conservatism
@@ -93,7 +93,7 @@
 #'      
 #'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
 #'New Statistics}. New York; Routledge.
-"ma_flag_priming"
+"flag_priming_ma"
 
 
 #'Meta-Analysis Example - Replication of gender difference in implicit
@@ -139,7 +139,7 @@
 #'
 #'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
 #'  New Statistics}. New York; Routledge.
-"ma_math_gender_iat"
+"math_gender_iat_ma"
 
 
 #'Meta-Analysis Example - Power and Performance
@@ -185,4 +185,4 @@
 #'
 #'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
 #'  New Statistics}. New York; Routledge.
-"ma_power_performance"
+"power_performance_ma"

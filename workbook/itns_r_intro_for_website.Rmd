@@ -41,41 +41,45 @@ In the remainder of the document, we assume that you have a basic understanding 
 
 **`itns` Package Data Frames**
 
-Name           |Section                 |Topic 
+Name           |Chapter       |Topic 
+---------------|--------------|-----------------------------------
+altruism_happiness  |12.3               |Regression
+anchor_estimate_ma  |9.1                |Meta-Analysis
+anchor_estimate     |7.3                |Two Independent Groups
+campus_involvement  |11.7               |Correlation
+clean_moral1        |7.4 , 10.2         |Two Independent Groups
+clean_moral2        |7.4                |Two Independent Groups
+college_survey1     |3.2, 3.3, 5.2, 5.3 |Descriptive Statistics & Plots, Single Sample Confidence Interval
+college_survey2     |5.4                |Single Sample Confidence Interval
+emotion_heartrate   |8.3                |Two Dependent Groups
+exam_scores         |11.2               |Correlation
+flag_priming_ma     |9.2                |Meta-Analysis
+home_prices         |12.2               |Regression
+home_prices_holdout |12.2               |Regression
+labels_flavor       |8.4                |Two Dependent Groups
+math_gender_iat     |7.5                |Two Independent Groups
+math_gender_iat_ma  |9.3                |Meta-Analysis
+organic_moral       |14.7               |One-Way Independent Group Contrasts and Comparisons
+power_performance_ma|9.4                |Meta-Analysis
+religious_belief    |3.4                |Descripitive Statistics & Plots
+self_explain_time   |15.4               |Analysing factorial designs
+sleep_beauty        |11.6               |Correlation
+videogame_aggression|15.3               |Analysing factorial designs
+stickgold           |6.5                |Single Sample Confidence Interval
+
+
+## Bob and Geoff - Should these datasets be kept or deleted???
+Name           |Chapter                 |Topic 
 ---------------|------------------------|-----------------------------------
-college_survey1     |Ch 3 End of Chapter Exercises 2 & 3  |Descriptive Statistics & Plots
-religious_belief    |Ch 3 End of Chapter Exercise 4       |Descripitive Statistics & Plots
-college_survey1     |Ch 5 End of Chapter Exercises 2 & 3  |Single Sample Confidence Interval
-college_survey2     |Ch 5 End of Chapter Exercise 4       |Single Sample Confidence Interval
-stickgold           |Ch 6 End of Chapter Exercise 5       |Single Sample Confidence Interval
+body_well           |Ch 11, 12                            |Correlation, Regression
+dana                |Ch 16 End of Chapter Exercise 3      |Robust Methods - Two Independent Groups
+natsal              |Ch 16.11                             |Robust Methods - Two Independent Groups
 pen_laptop1         |Ch 7.6-7.12                          |Two Independent Groups
 pen_laptop2         |Ch 7.36-7.38                         |Two Independent Groups
-anchor_estimate     |Ch 7 End of Chapter Exercise 3       |Two Independent Groups
-clean_moral1        |Ch 7 End of Chapter Exercise 4       |Two Independent Groups
-clean_moral2        |Ch 7 End of Chapter Exercise 4       |Two Independent Groups
-math_gender_iat     |Ch 7 End of Chapter Exercise 5       |Two Independent Groups
+rattan              |Ch 14.10-14.12                       |One-Way Independent Group Contrasts and Comparisons
 thomason1           |Ch 8, 11, 12                         |Two Dependent Groups, Scatterplots, Regression
 thomason2           |Ch 8                                 |Two Dependent Groups
 thomason3           |Ch 8, 12.18                          |Two Dependent Groups, Regression
-emotion_heartrate   |Ch 8 End of Chapter Exercise 3       |Two Dependent Groups
-labels_flavor       |Ch 8 End of Chapter Exercise 4       |Two Dependent Groups
-ma_anchor_adjust    |Ch9 End of Chapter Exercise 1        |Meta-Analysis
-ma_flag_priming     |Ch9 End of Chapter Exercise 2        |Meta-Analysis
-ma_math_gender_iat  |Ch9 End of Chapter Exercise 3        |Meta-Analysis
-ma_power_performance|Ch9 End of Chapter Exercise 4        |Meta-Analysis
-body_well           |Ch 11, 12                            |Correlation, Regression
-exam_scores         |Ch 11 End of Chapter Exercise 2      |Correlation
-sleep_beauty        |Ch 11 End of Chapter Exercise 6      |Correlation
-campus_involvement  |Ch 11 End of Chapter Exercise 7      |Correlation
-home_prices         |Ch 12 End of Chapter Exercise 2      |Regression
-home_prices_holdout |Ch 12 End of Chapter Exercise 2h     |Regression
-altruism_happiness  |Ch 12 End of Chapter Exercise 3      |Regression
-rattan              |Ch 14.10-14.12                       |One-Way Independent Group Contrasts and Comparisons
-organic_moral       |Ch 14 End of Chapter Exercise 5      |One-Way Independent Group Contrasts and Comparisons
-videogame_aggression|Ch 15 End of Chapter Exercise 3      |Analysing factorial designs
-self_explain_time   |Ch 15 End of Chapter Exercise 4      |Analysing factorial designs
-natsal              |Ch 16.11                             |Robust Methods - Two Independent Groups
-dana                |Ch 16 End of Chapter Exercise 3      |Robust Methods - Two Independent Groups
 
 The `itns` package is not yet on [CRAN](https://cran.r-project.org), but you can download it from [github](https://github.com/gitrman/itns) using the `devtools` package:
 
@@ -402,23 +406,3 @@ In this guide we have provided a brief overview of how to install R, the `itns` 
 # Reference
 Cumming, G., & Calin-Jageman, R. (2017). *Introduction to the New Statistics*. New York; Routledge.
 
-# Question for Geoff and Bob
-
-There are several data sets in the 'End of Chapter exercise' Excel files for the book website that I could not find referenced in the book.  Have these been removed?  They are listed below.
-
-Name           |Section                  
----------------|-------------------------
-flag_priming        |Ch 7 ???
-super_golf          |Ch 7 ???
-habituation         |Ch 8 ??? 
-learning_genes      |Ch 8 ???
-sensitization       |Ch 8 ???
-ma_gambler_fallacy  |Ch9 ???
-ma_anchor_adjust_chicago |Ch9 ???
-ma_anchor_adjust_everest |Ch9 ???
-ch11_ex7            |Ch 11 ???
-ch12_ex3            |Ch 12 ???
-inauthentic         |Ch 14 ???
-iqboost             |Ch 14 ???
-blame1              |Ch 15 ???
-blame2              |Ch 15 ???

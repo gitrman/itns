@@ -14,7 +14,6 @@
     rownames(df) <- NULL
     df
   }
-
   pen_laptop1 <- PenLap('BJ8:BJ42', 'BM8:BM39')
   pen_laptop2 <- PenLap('BR8:BR56', 'BU8:BU111')
 # pen_laptop3 <- PenLap('BZ8:BZ62', 'CC8:CC63')
@@ -214,8 +213,8 @@
   df$location <- factor(df$location)
   df$subset <- factor(df$subset)
   df$country <- factor(df$country)
-  ma_anchor_adjust <- df
-  devtools::use_data(ma_anchor_adjust, overwrite = TRUE)
+  anchor_estimate_ma <- df
+  devtools::use_data(anchor_estimate_ma, overwrite = TRUE)
   rm(df)
 
 # Flag Priming
