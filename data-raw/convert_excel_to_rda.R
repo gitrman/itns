@@ -221,8 +221,8 @@
   df <- readWorksheet(loadWorkbook('data-raw/ITNS-Ch09-Excercises data - meta-analysis-gdc.xlsx'), sheet = "flag_priming_meta-analysis", region = 'A1:G26')
   colnames(df) <- stringr::str_to_lower(names(df)) # convert colnames to lower case
   df$location <- factor(df$location)
-  ma_flag_priming <- df
-  devtools::use_data(ma_flag_priming, overwrite = TRUE)
+  flag_priming_ma <- df
+  devtools::use_data(flag_priming_ma, overwrite = TRUE)
   rm(df)
 
 # Math Gender IAT
@@ -231,8 +231,8 @@
   df$location <- factor(df$location)
   df$subset <- factor(df$subset)
   df$country <- factor(df$country)
-  ma_math_gender_iat <- df
-  devtools::use_data(ma_math_gender_iat, overwrite = TRUE)
+  math_gender_iat_ma <- df
+  devtools::use_data(math_gender_iat_ma, overwrite = TRUE)
   rm(df)
 
 # Power Performance
@@ -241,8 +241,8 @@
   df[, 1:7] <- plyr::colwise(as.factor)(df [, 1:7])
   colnames(df)[13] <- "cohensd"
   df <- df [, -12] # cull empty column
-  ma_power_performance <- df
-  devtools::use_data(ma_power_performance, overwrite = TRUE)
+  power_performance_ma <- df
+  devtools::use_data(power_performance_ma, overwrite = TRUE)
   rm(df)
 
 # Gambler Fallacy
