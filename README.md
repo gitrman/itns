@@ -23,9 +23,9 @@ Installation
 Documentation
 =============
 
-You can read the tutorial *Getting Started with the New Statistics in R* **LINK TO GO HERE**, which provides an overview of the `itns` package, as well as other R packages and functions that can be used to conduct the analyses covered in *Introdudction to the New Statistics*.
+You can read the tutorial [Getting Started with the New Statistics in R](../blob/master/workbook/itns_r_into_for_website.pdf), which provides an overview of the `itns` package, as well as other R packages and functions that can be used to conduct the analyses covered in *Introdudction to the New Statistics*.
 
-You can also download a PDF version of the package manual. **LINK TO GO HERE**
+You can also [download a PDF version of the package manual](../blob/master/workbook/itns-manual.pdf).
 
 References
 ==========
