@@ -127,10 +127,10 @@
   colnames(y) <- stringr::str_to_lower(names(y)) # convert all column names to lowercase
 
   # Convert to .rda
-  clean_moral1 <- x
-  clean_moral2 <- y
+  clean_moral_schall <- x
+  clean_moral_johnson <- y
 
-  devtools::use_data(clean_moral1, clean_moral2, overwrite = TRUE)
+  devtools::use_data(clean_moral_schall, clean_moral_johnson, overwrite = TRUE)
 
 # math gender IAT
   rm(x, y)
@@ -505,4 +505,16 @@
   devtools::use_data(rattan, overwrite = TRUE)
   rm(x, y, z, df)
   
+#------ Add Religion Sharing and Study Strategies datasets
+  library(readr)
+  religion_sharing <- as.data.frame(read_csv("data-raw/religion_sharing/Religion_Sharing.csv"))
+  names(religion_sharing) <- c("statistic", "non_religious_parents", "christian_parents", "muslim_parents")
+  devtools::use_data(religion_sharing, overwrite = TRUE)
+  
+  
+  study_strategies <- as.data.frame(read_csv("data-raw/study_strategies/study_strategies.csv"))
+  names(study_strategies) <- c("dv", "statistic", "self_explain", "elaborative_interrogation", "repetition_control")
+  devtools::use_data(study_strategies, overwrite = TRUE)
+  
+
   

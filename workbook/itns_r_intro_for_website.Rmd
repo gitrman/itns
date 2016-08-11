@@ -39,18 +39,34 @@ In the remainder of the document, we assume that you have a basic understanding 
 
 \pagebreak
 
-**`itns` Package Data Frames**
+**`itns` Data Frames For Within-Chapter Exercises**
 
-Name           |Chapter       |Topic 
----------------|--------------|-----------------------------------
+
+Name              |Chapter       |Topic 
+------------------|--------------|----------------------------------------
+body_well           |11, 12                            |Correlation, Regression
+natsal              |16.11                             |Robust Methods - Two Independent Groups
+pen_laptop1         |7.6-7.12                          |Two Independent Groups
+pen_laptop2         |7.36-7.38                         |Two Independent Groups
+rattan              |14.10-14.12                       |One-Way Independent Group Contrasts and Comparisons
+thomason1           |8, 11, 12                         |Two Dependent Groups, Scatterplots, Regression
+thomason2           |8                                 |Two Dependent Groups
+thomason3           |8, 12.18                          |Two Dependent Groups, Regression
+
+
+**`itns` Data Frames For End-Of-Chapter Exercises**
+
+Name              |Chapter       |Topic 
+------------------|--------------|----------------------------------------
 altruism_happiness  |12.3               |Regression
-anchor_estimate_ma  |9.1                |Meta-Analysis
 anchor_estimate     |7.3                |Two Independent Groups
+anchor_estimate_ma  |9.1                |Meta-Analysis
 campus_involvement  |11.7               |Correlation
-clean_moral1        |7.4 , 10.2         |Two Independent Groups
-clean_moral2        |7.4                |Two Independent Groups
+clean_moral_johnson |7.4                |Two Independent Groups
+clean_moral_schall  |7.4 , 10.2         |Two Independent Groups
 college_survey1     |3.2, 3.3, 5.2, 5.3 |Descriptive Statistics & Plots, Single Sample Confidence Interval
 college_survey2     |5.4                |Single Sample Confidence Interval
+dana                |16.3               |Robust Methods - Two Independent Groups
 emotion_heartrate   |8.3                |Two Dependent Groups
 exam_scores         |11.2               |Correlation
 flag_priming_ma     |9.2                |Meta-Analysis
@@ -62,24 +78,13 @@ math_gender_iat_ma  |9.3                |Meta-Analysis
 organic_moral       |14.7               |One-Way Independent Group Contrasts and Comparisons
 power_performance_ma|9.4                |Meta-Analysis
 religious_belief    |3.4                |Descripitive Statistics & Plots
+religion_sharing    |14.3               |One-Way Independent Group Contrasts and Comparisons
 self_explain_time   |15.4               |Analysing factorial designs
 sleep_beauty        |11.6               |Correlation
-videogame_aggression|15.3               |Analysing factorial designs
+study_strategies    |14.1               |One-Way Independent Group Contrasts and Comparisons
 stickgold           |6.5                |Single Sample Confidence Interval
+videogame_aggression|15.3               |Analysing factorial designs
 
-
-## Bob and Geoff - Should these datasets be kept or deleted???
-Name           |Chapter                 |Topic 
----------------|------------------------|-----------------------------------
-body_well           |Ch 11, 12                            |Correlation, Regression
-dana                |Ch 16 End of Chapter Exercise 3      |Robust Methods - Two Independent Groups
-natsal              |Ch 16.11                             |Robust Methods - Two Independent Groups
-pen_laptop1         |Ch 7.6-7.12                          |Two Independent Groups
-pen_laptop2         |Ch 7.36-7.38                         |Two Independent Groups
-rattan              |Ch 14.10-14.12                       |One-Way Independent Group Contrasts and Comparisons
-thomason1           |Ch 8, 11, 12                         |Two Dependent Groups, Scatterplots, Regression
-thomason2           |Ch 8                                 |Two Dependent Groups
-thomason3           |Ch 8, 12.18                          |Two Dependent Groups, Regression
 
 The `itns` package is not yet on [CRAN](https://cran.r-project.org), but you can download it from [github](https://github.com/gitrman/itns) using the `devtools` package:
 

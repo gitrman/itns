@@ -26,8 +26,8 @@
 #'Cumming, G., & Calin-Jageman, R. (2017).
 #'  \emph{Introduction to the New Statistics}. New York; Routledge.
 #'
-#'@seealso \code{\link{clean_moral2}, which is a replication of the Schnall et al study}
-"clean_moral1"
+#'@seealso \code{\link{clean_moral_johnson}, which is a replication of the Schnall et al study}
+"clean_moral_schall"
 
 
 #'Two Independent Groups - Clean Moral Replication Study
@@ -35,7 +35,7 @@
 #'An example of data from a study with a two independent groups design used in Chapter 7 of the book 
 #'\emph{Introduction to the New Statistics}.
 #'
-#'This data comes from a replication of the study described in \code{\link{clean_moral1}}
+#'This data comes from a replication of the study described in \code{\link{clean_moral_schall}}
 #'
 #'After publication of that study, Cheung, Donnellan & Johnson (2014) attempted a close replication,
 #'using the same manipulation and the same measure of moral judgement.
@@ -59,8 +59,5 @@
 #'Cumming, G., & Calin-Jageman, R. (2017).
 #'  \emph{Introduction to the New Statistics}. New York; Routledge.
 #'
-#'@seealso \code{\link{clean_moral1}}
-"clean_moral2"
-
-
-
+#'@seealso \code{\link{clean_moral_schall}}
+"clean_moral_johnson"

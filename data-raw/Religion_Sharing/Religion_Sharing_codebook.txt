@@ -1,0 +1,13 @@
+Religious upbringing and altruistic behavior
+
+To what extent does being raised in a religious famility relate to prosocial or altruistic behavior.  To investigate, Decety et al. (2015) collected data from a large, international sample (N = 1,170 with families recruited from the U.S., Canada, Jordan, Turkey, South Africa, and China.).  Parents reported their religious belief (Non-religious, Christian, Muslum, Buddhist, Jewish, Hindu, or other).  In addition, children played a game in which they were given 10 stickers but then asked if they would share some of these stickers with another child who hadn't been able to make it to the lab to play the game.  The measure of altruism/sharing is the number of stickers given (out of 10).  
+
+Summary data from this study as in the table on the left.  The researhcers asked two questions:
+* Do children raised by Christian parents differ in sharing/altruism relative to children raised by Muslim parents?
+* Do children raised by non-religious parents differ in sharing/altruism relative to children raised by religious parents (Christian or Muslim).
+
+This data is from:
+
+Decety, J., Cowell, J. M., Lee, K., Mahasneh, R., Malcolm-Smith, S., Selcuk, B., & Zhou, X. (2015). The Negative Association between Religiousness and Children’s Altruism across the World. Current Biology, 1–5. doi:10.1016/j.cub.2015.09.056
+
+

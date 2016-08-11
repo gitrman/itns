@@ -1,0 +1,56 @@
+#'One-Way Independent Groups Design Example - Study Strategy Effectiveness
+#'
+#'Summary data used in Chapter 14 of the book \emph{Introduction to the New
+#'Statistics}.
+#'
+#'To what extent does study strategy influence learning.  To investigate,
+#'students were asked to study 27 facts about the circulatory system. Students
+#'viewed each fact one-at-a-time on a computer screen and were prompted to use
+#'different study stratgies: 
+#'
+#'
+#'\itemize{
+#'   \item Self-explanation - for each fact, students were asked "Explain what 
+#'   the sentence means to you. That is, what new information does the sentence 
+#'   provide for you? And how does it relate to what you already know?"
+#'   \item Elaborative interrogation - for each fact, students were asked "Why
+#'   does it make sense that..."?
+#'   \item Repetition control - these students were simply
+#'    asked to repeat each fact out loud and spent the same amount of time studying
+#'     each fact as students in the other two groups.
+#' }
+#' 
+#' Notice that self-explanation and elaborative interrogation seem quite similar.  
+#' However, elaborative interrogation seems to ask students to use their own judgement 
+#' of why the fact makes sense, whereas self-explanation focuses more on the new information
+#'provided. 
+#'
+#'A number of measures were collected: 
+#'\itemize{
+#'  \item Before studying, student rated their prior knowledge of the circulatory system on 
+#'  a scale from 5-20. 
+#'  \item After studying, students completed a memory test in which they had to
+#'  fill in key words for each fact (fill-in-blank) with a word bank available. 
+#'  \item After studying and testing, students rated how easy they felt it was to use the study 
+#'  strategy on a scale from 1-5.
+#'}
+#'
+#'@source The summary data comes from:
+#'
+#'O'Reilly, T., Symons, S., & MacLatchy-Gaudet, H. (1998). A Comparison of
+#'Self-Explanation and Elaborative Interrogation. \emph{Contemporary Educational
+#'Psychology, 23}, 434-445. \url{doi:10.1006/ceps.1997.0977}
+#'
+#'@format A data frame with 9 rows and 5 variables: 
+#'\describe{ 
+#'  \item{dv}{Character string giving the dependedent variable}
+#'  \item{statistic}{Character string indicitaing whether the statistic is the sample size (n), 
+#'                    Mean (m), or Standard Deviation(s)}
+#'  \item{self_explain}{Statistics for the self explain group}
+#'  \item{elaborative_interrogation}{Statistics for the elaborative interrogation group}
+#'  \item{repetition_control}{Statistics for the repetition control group}
+#'    }
+#'  
+#'@references Cumming, G., & Calin-Jageman, R. (2017). \emph{Introduction to the
+#'New Statistics}. New York; Routledge.
+"study_strategies"
