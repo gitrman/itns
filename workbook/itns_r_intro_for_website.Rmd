@@ -1,13 +1,14 @@
 ---
 title: "Getting Started with the New Statistics in R"
 author: "David Erceg-Hurn, Geoff Cumming, Robert Calin-Jageman"
-date: "`r Sys.Date()`"
-output: 
+date: '`r Sys.Date()`'
+output:
+  word_document: default
   pdf_document:
-    latex_engine: xelatex
-    fig_width: 5
     fig_height: 3.5
-mainfont: "Arial"
+    fig_width: 5
+    latex_engine: xelatex
+mainfont: Arial
 urlcolor: blue
 ---
 
@@ -406,7 +407,7 @@ Many additional robust statistics functions can be downloaded from [Rand Wilcox'
 
 
 # Summary
-In this guide we have provided a brief overview of how to install R, the `itns` data package, and a variety of R packages and functions that will help get you started using the 'new statistics' in R.  In addition to the packages covered in this guide, there are many others that are useful for data analysis - at the time of writing there were nearly [9000 available on CRAN](https://cran.r-project.org/web/packages).  A good way to keep up to date with new packages and developments in the R community is to subscribe to [R bloggers](https://www.r-bloggers.com).  We wish you luck in your adventures using R - may your confidence intervals be short!
+In this guide we have provided a brief overview of how to install R, the `itns` data package, and a variety of R packages and functions that will help get you started using the 'new statistics' in R.  In addition to the packages covered in this guide, there are many others that are useful for data analysis - at the time of writing there were over [10,000 available on CRAN](https://cran.r-project.org/web/packages).  A good way to keep up to date with new packages and developments in the R community is to subscribe to [R bloggers](https://www.r-bloggers.com).  We wish you luck in your adventures using R - may your confidence intervals be short!
 
 # Reference
 Cumming, G., & Calin-Jageman, R. (2017). *Introduction to the New Statistics*. New York; Routledge.
