@@ -6,9 +6,9 @@ itns
 
 [![Travis-CI Build Status](https://travis-ci.org/gitrman/itns.svg?branch=master)](https://travis-ci.org/gitrman/itns)
 
-This R package contains datasets from psychology studies used in book [Introduction to the New Statistics](http://www.thenewstatistics.com) by Geoff Cumming and Robert Calin-Jageman, to be published by Routledge in late 2016. It also contains a function to compute Cohen's d effect size and a confidence interval for paired samples.
+This R package contains datasets from psychology studies used in book [Introduction to the New Statistics](http://www.thenewstatistics.com) by Geoff Cumming and Robert Calin-Jageman, published by Routledge in late 2016. It also contains a function to compute Cohen's d effect size and a confidence interval for paired samples.
 
-The original source of the datasets is a series of Excel files (that will soon be) found on the *Introduction to the New Statistics* website. Those Excel files have been converted to R data frames and bundled together in the `itns` package. The datasets can be used to replicate analyses that appear in *Introduction to the New Statistics*, and to work through the book's end-of-chapter exercises.
+The original source of the datasets is a series of Excel files found on the [Introduction to the New Statistics publisher companion website](http://routledgetextbooks.com/textbooks/9781138825529/). Those Excel files have been converted to R data frames and bundled together in the `itns` package. The datasets can be used to replicate analyses that appear in *Introduction to the New Statistics*, and to work through the book's end-of-chapter exercises.
 
 Installation
 ============
