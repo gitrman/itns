@@ -33,4 +33,3 @@ Also included is a function to compute Cohen's d effect size for paired samples.
 Cumming, G., & Calin-Jageman, R. (2017).
  \emph{Introduction to the New Statistics}. New York; Routledge.
 }
-

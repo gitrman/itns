@@ -32,8 +32,8 @@ thinking. See \code{\link{thomason1}} for more details.
  Cumming, G., & Calin-Jageman, R. (2017).
  \emph{Introduction to the New Statistics}. New York; Routledge.
 }
+
 \seealso{
 \code{\link{thomason1}} \code{\link{thomason3}}
 }
 \keyword{datasets}
-

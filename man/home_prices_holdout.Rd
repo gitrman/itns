@@ -33,4 +33,3 @@ Cumming, G., & Calin-Jageman, R. (2017).
 \code{\link{home_prices}}
 }
 \keyword{datasets}
-

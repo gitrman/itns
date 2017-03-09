@@ -31,4 +31,3 @@ Analytic Thinking Promotes Religious Disbelief. \emph{Science, 336(6080)},
 493-496. doi:10.1126/science.1215647
 }
 \keyword{datasets}
-

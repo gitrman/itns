@@ -33,4 +33,3 @@ Cumming, G., & Calin-Jageman, R. (2017).
 \code{\link{pen_laptop1}}
 }
 \keyword{datasets}
-

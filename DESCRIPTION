@@ -23,6 +23,6 @@ Imports:
     MBESS (>= 4.0.0)
 License: GPL-3
 LazyData: TRUE
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown

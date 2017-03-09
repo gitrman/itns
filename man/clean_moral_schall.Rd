@@ -38,4 +38,3 @@ Cumming, G., & Calin-Jageman, R. (2017).
 \code{\link{clean_moral_johnson}, which is a replication of the Schnall et al study}
 }
 \keyword{datasets}
-

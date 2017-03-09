@@ -43,4 +43,3 @@ can be good at math": Instructors with an entity theory comfort (and demotivate)
 students. \emph{Journal of Experimental Social Psychology, 48}, 731-737.
 }
 \keyword{datasets}
-

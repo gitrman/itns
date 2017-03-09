@@ -39,4 +39,3 @@ Cumming, G., & Calin-Jageman, R. (2017).
 \code{\link{clean_moral_schall}}
 }
 \keyword{datasets}
-

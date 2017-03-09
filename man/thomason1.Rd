@@ -47,4 +47,3 @@ Cumming, G., & Calin-Jageman, R. (2017).
 \code{\link{thomason2}} \code{\link{thomason3}}
 }
 \keyword{datasets}
-

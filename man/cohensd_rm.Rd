@@ -44,4 +44,3 @@ Intervals for Effect Sizes. \emph{Educational and Psychological Measurement,
 Cumming, G. (2012). \emph{Understanding The New Statistics:
 Effect Sizes, Confidence Intervals, and Meta-Analysis}. Routledge; New York.
 }
-
