@@ -47,7 +47,7 @@ cohensd_rm <- function(x, y, ci = 95, unbiased = FALSE){
   a <- stats::t.test(x, y, paired = TRUE, conf.level = ci/100)  # compute paired t-test
   ncp <- a$statistic                    # paired t-statistic is the noncentrality parameter
   b <- a$parameter                      # extract df
-  n <- length(x) - 1                    # sample size
+  n <- length(x)                        # sample size
   nct_limits <- MBESS::conf.limits.nct(t.value = ncp, df = b, conf.level = ci/100) # compute noncentrality limits
   mult <- sqrt(2*(var(x) + var(y) - 2*cov(x, y)) / (n*(var(x) + var(y))))  # multiplication factor
   ll <- nct_limits$Lower.Limit*mult     # lower limit of CI
